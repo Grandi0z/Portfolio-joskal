@@ -8,7 +8,7 @@
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b># Hello-Microverse-Project</b></h3>
+  <h3><b># Joseph's Portfolio</b></h3>
 
 </div>
 
@@ -38,10 +38,10 @@
 
 
 
-# 📖 [HELLO MICROVERSE PROJECT] <a name="about-project"></a>
+# 📖 [JOSEPH'S PORTFOLIO] <a name="about-project"></a>
 
 
-**[HELLO MICROVERSE PROJECT]** is the first project I work on respecting the rule of a professional repo
+**[JOSEPH'S PORTFOLIO]** is a professional Portfolio for a professional web developper
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -64,8 +64,9 @@
 
 > Describe between 1-3 key features of the application.
 
-- **[1 This application displays "Hello Microvese"]**
-- **[2 This application has a title]**
+- **[1 This application introduce his owner ]**
+- **[2 It's talk about his work]**
+- **[3 Present how to get in touch with in]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -76,7 +77,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://github.com/Grandi0z/Hello-Microverse-Project/tree/3efd29b3a68c4459e9a77708191b49c72aa76c78)
+- [Live Demo Link](https://github.com/Grandi0z/Portfolio-setup-and-mobile-first)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,7 +87,7 @@
 
 > Describe how a new developer could make use of your project.
 
-This project will be useful if you want to work as a professional.
+This project will be useful for professional devellopers
 
 ### Prerequisites
 
@@ -108,7 +109,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Grandi0z/Hello-Microverse-Project.git
+  git clone https://github.com/Grandi0z/Portfolio-setup-and-mobile-first.git
 ```
 
 
@@ -178,8 +179,9 @@ You can deploy this project using:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [1] **[a beautifull index.html file]**
-- [2] **[a style sheet to make everything look beautifull]**
+- [1] **[Details about recent works]**
+- [2] **[Some live demos]**
+- [2] **[Links of my articles ]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -190,7 +192,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Grandi0z/Hello-Microverse-Project/issues).
+Feel free to check the [issues page](https://github.com/Grandi0z/Portfolio-setup-and-mobile-first/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -210,7 +212,7 @@ If you like this project please contact the authors <a href = "mailto: josephlka
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank Microverse team for every efforts they did specially Mr. Emmanuel Orji-Ihuoma for review
+I would like to thank Microverse team for every efforts they did specially Mr. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

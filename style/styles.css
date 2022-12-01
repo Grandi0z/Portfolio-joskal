@@ -1,0 +1,82 @@
+/*Header*/
+#main-head {
+    padding: 0 10px;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+header > a :hover{
+    color: #1E488F;
+}
+
+ /*style main section*/
+
+.about-me { 
+    background: url("../image/mainBackGround.png") no-repeat;
+    background-size: contain;
+ }
+
+ 
+
+#icn-menu {
+    width: 32px;
+    height: 37px;
+}
+
+ /*style main section's content*/
+
+.me {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #172B4D;
+    max-width: 327px;
+    max-height: 192px;
+  }
+
+  .whatIdo {
+    display: block;
+    color: #36B37E;
+  }
+
+  .paragrph {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172B4D;
+    max-width: 327px;
+    max-height: 164px;
+  }
+
+/*style soccial-media links*/
+#social-media {
+    min-width: 170.17px;
+    min-height: 20px; 
+  }
+  
+/*FLEXBOX*/
+
+
+#main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+#social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
