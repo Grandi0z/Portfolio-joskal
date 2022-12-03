@@ -1,0 +1,80 @@
+/* general */
+.family {
+  font-family: 'Inter', sans-serif;
+}
+
+/* header */
+#main-head {
+  padding: 0 10px;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#welcome {
+  width: 90px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+header > a :hover {
+  color: #1e488f;
+}
+
+/* style main section */
+.about-me {
+  background: url("../image/mainBackGround.png") no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+#icn-menu {
+  width: 32px;
+  height: 37px;
+}
+
+/* style main section's content */
+.me {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  max-width: 327px;
+  max-height: 192px;
+}
+
+.whatIdo {
+  display: block;
+  color: #36b37e;
+}
+
+.paragrph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  max-width: 327px;
+  max-height: 164px;
+}
+
+/* style soccial-media links */
+#social-media {
+  min-width: 170.17px;
+  min-height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  list-style-type: none;
+}
