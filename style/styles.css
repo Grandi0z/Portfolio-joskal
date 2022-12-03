@@ -1,12 +1,32 @@
 /* general */
 .family {
   font-family: 'Inter', sans-serif;
+  font-style: normal;
 }
+section {
+  display: flex;
+}
+article {
+  display: flex;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3A4A42;
+}
+button {
+  padding: 8px 12px;
+  background: #EBF0EE;
+  border: none;
+  border-radius: 4px;
+}
+
 
 /* header */
 #main-head {
   padding: 0 10px;
-  font-style: normal;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -15,7 +35,6 @@
 #welcome {
   width: 90px;
   height: 28px;
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
@@ -29,7 +48,6 @@ header > a :hover {
 .about-me {
   background: url("../image/mainBackGround.png") no-repeat;
   background-size: contain;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -43,7 +61,6 @@ header > a :hover {
 
 /* style main section's content */
 .me {
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -59,7 +76,6 @@ header > a :hover {
 }
 
 .paragrph {
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -77,4 +93,64 @@ header > a :hover {
   justify-content: space-around;
   align-items: baseline;
   list-style-type: none;
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* section 2 : my recent works */
+
+h2 {
+  width: 327px;
+  height: 97px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+.box {
+  bottom: 0px;
+  width: 327px;
+  height: 474px;
+  background: #EBF0EE;
+  border: 1px solid #D0D9D4;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.in-box {
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 327px;
+  height: 222px;
+  top: calc(53%);
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#recent-works {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
 }
