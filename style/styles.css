@@ -12,6 +12,15 @@
   align-items: baseline;
 }
 
+#welcome {
+  width: 90px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 header > a :hover {
   color: #1e488f;
 }
@@ -67,4 +76,5 @@ header > a :hover {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  list-style-type: none;
 }
