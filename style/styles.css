@@ -272,14 +272,22 @@ textarea {
   margin-top: 20px;
 }
 
-.btn-language2 {
+/* .btn-language2 {
   display: flex;
   flex-wrap: wrap;
   gap: 9px;
   justify-content: center;
   margin: 0;
   padding: 0;
+} */
+
+
+
+.btn-style-21 {
+  float: left;
 }
+
+
 
 /* section 3 : contact */
 
