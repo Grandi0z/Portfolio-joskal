@@ -281,10 +281,18 @@ textarea {
   padding: 0;
 } */
 
+.btn-language2 {
+  width: 375px;
+  height: 100px;
 
+} 
 
 .btn-style-21 {
-  float: left;
+  float:left ;
+}
+
+.btn-style-24 {
+  float: right;
 }
 
 
