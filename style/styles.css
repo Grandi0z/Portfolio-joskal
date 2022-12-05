@@ -282,19 +282,40 @@ textarea {
 } */
 
 .btn-language2 {
-  width: 375px;
+  width: 285px;
   height: 100px;
-
+  margin: auto;
+  padding-left: 0px;
+  text-align: center;
 } 
 
 .btn-style-21 {
-  float:left ;
+  float:left;
+  background-color: #fff;
+  color: #36b37e;
+  margin-right: 2px;
 }
 
+
+.btn-style-22 {
+  float:left;
+  background-color: #fff;
+  color: #36b37e;
+  margin-right: 2px;
+  
+}
+.btn-style-23 {
+  float:left;
+  background-color: #fff;
+  color: #36b37e;
+  margin-right: 2px;
+}
 .btn-style-24 {
-  float: right;
+  float:left;
+  background-color: #fff;
+  color: #36b37e;
+  margin-right: 2px;
 }
-
 
 
 /* section 3 : contact */
