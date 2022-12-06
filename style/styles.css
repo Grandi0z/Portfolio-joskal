@@ -55,6 +55,7 @@ button {
 }
 
 .btn-big {
+  width: 129px;
   height: 48px;
   background: #36b37f;
   border-radius: 4px;
@@ -68,13 +69,11 @@ button {
 }
 
 .btn-big:hover {
-  background-color: #2cb87e;
-  color: white;
+  opacity: 0.8;
 }
 
 .btn-big :active {
-  background-color: #008552;
-  color: white;
+  filter: contrast(60%);
 }
 
 .btn-style-2 {
@@ -296,6 +295,8 @@ textarea {
 }
 
 .head-contact {
+
+  justify-items: center;
   height: 363px;
   margin: 80px 0;
 }
@@ -303,8 +304,8 @@ textarea {
 .form-contact {
   display: flex;
   flex-direction: column;
-  float: none;
   row-gap: 27px;
+  align-items: center;
 }
 
 #indicator {
@@ -324,4 +325,14 @@ textarea {
 #resume {
   margin: 0;
   margin-bottom: 40px;
+}
+
+.ContacMe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  background-attachment: scroll;
+  background: url("../image/illustration-contact-form.png") 100% 88% no-repeat;
+   
 }
