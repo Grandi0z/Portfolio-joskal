@@ -55,7 +55,6 @@ button {
 }
 
 .btn-big {
-  width: 129px;
   height: 48px;
   background: #36b37f;
   border-radius: 4px;
@@ -98,7 +97,7 @@ button {
 
 input {
   height: 48px;
-  width: 338px;
+  width: 327px;
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
@@ -110,7 +109,7 @@ textarea {
   border-radius: 4px;
   background: #fff;
   box-sizing: border-box;
-  width: 338px;
+  width: 327px;
   margin-bottom: 20px;
 }
 
@@ -295,7 +294,6 @@ textarea {
 }
 
 .head-contact {
-
   justify-items: center;
   height: 363px;
   margin: 80px 0;
@@ -306,6 +304,7 @@ textarea {
   flex-direction: column;
   row-gap: 27px;
   align-items: center;
+  width: 327px;
 }
 
 #indicator {
@@ -320,6 +319,7 @@ textarea {
   color: #42526e;
   margin: 0 0 50px 0;
   padding: 0;
+  height: 189px;
 }
 
 #resume {
@@ -327,12 +327,11 @@ textarea {
   margin-bottom: 40px;
 }
 
-.ContacMe{
+.ContacMe {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 375px;
+  background: url("../image/illustration-contact-form.png") 100% 77% no-repeat;
   background-attachment: scroll;
-  background: url("../image/illustration-contact-form.png") 100% 88% no-repeat;
-   
 }
