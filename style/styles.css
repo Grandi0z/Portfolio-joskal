@@ -67,7 +67,7 @@ button {
   margin-bottom: 35px;
 }
 
-.btn-big :hover {
+.btn-big:hover {
   background-color: #2cb87e;
   color: white;
 }
@@ -134,6 +134,7 @@ textarea {
 /* style main section */
 .about-me {
   background: url("../image/mainBackGround.png") no-repeat;
+  background-position: center;
   background-size: contain;
   flex-direction: column;
   justify-content: space-around;
