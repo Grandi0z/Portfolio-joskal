@@ -296,7 +296,13 @@ textarea {
 .head-contact {
   justify-items: center;
   height: 363px;
-  margin: 80px 0;
+  margin: 60px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  text-align: center;
+  width: 327px;
 }
 
 .form-contact {
