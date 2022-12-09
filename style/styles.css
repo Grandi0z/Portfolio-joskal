@@ -55,6 +55,14 @@ button {
   border-radius: 4px;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
+button :active {
+  filter: contrast(60%);
+}
+
 .btn-big {
   height: 48px;
   background: #36b37f;
@@ -379,7 +387,7 @@ textarea {
 
   #navList {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     padding: 0;
     align-content: center;
     column-gap: 12px;
@@ -446,7 +454,7 @@ textarea {
 
   .box-articles {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     column-gap: 15px;
   }
 
@@ -458,11 +466,14 @@ textarea {
   #about-me {
     margin-bottom: 150px;
     height: 100vh;
+    background: url('../image/Desktop/oragamie2.svg') -0.5% 18% no-repeat, url('../image/Desktop/origamie1.svg') 100% -1.1% no-repeat;
+    background-attachment: scroll;
+    background-size: 15%, 11%;
   }
 
   .box-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     column-gap: 15px;
   }
 
@@ -530,7 +541,7 @@ textarea {
 
   #navList {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     padding: 0;
     align-content: center;
     column-gap: 12px;
@@ -604,7 +615,7 @@ textarea {
 
   .box-articles {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     gap: 5px;
     box-sizing: border-box;
   }
@@ -619,8 +630,6 @@ textarea {
     width: 1fr;
     height: 1fr;
   }
-
-  /* about me */
   #about-me {
     margin-bottom: 150px;
     height: auto;
@@ -631,7 +640,7 @@ textarea {
 
   .box-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     gap: 5px;
     box-sizing: border-box;
   }
