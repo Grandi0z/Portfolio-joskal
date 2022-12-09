@@ -695,7 +695,7 @@ textarea {
   }
 }
 
-.transition1 { 
+.transition1 {
   transition: width 2s, height 2s;
 }
 
