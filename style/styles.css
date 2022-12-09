@@ -2,8 +2,10 @@
 body {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  display: grid;
-  grid-template-rows: 1;
+}
+
+#main {
+  flex-direction: column;
 }
 
 section {
@@ -26,7 +28,6 @@ h2 {
   color: #172b4d;
   text-align: center;
   width: 327px;
-  height: 97px;
 }
 
 h3 {
@@ -52,6 +53,14 @@ button {
   background: #ebf0ee;
   border: none;
   border-radius: 4px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button :active {
+  filter: contrast(60%);
 }
 
 .btn-big {
@@ -115,10 +124,13 @@ textarea {
 
 /* header */
 #main-head {
-  padding: 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+#deskNav {
+  display: none;
 }
 
 #welcome {
@@ -133,7 +145,15 @@ textarea {
 .about-me {
   background: url("../image/mainBackGround.png") no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+#aboutBox {
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -182,6 +202,8 @@ textarea {
   list-style-type: none;
   margin: 5px;
   padding: 0;
+  max-width: 200px;
+  max-height: 40px;
 }
 
 /* section 2 : my recent works */
@@ -190,6 +212,7 @@ textarea {
   grid-template-columns: 1;
   justify-content: center;
   height: auto;
+  margin-bottom: 40px;
 }
 
 .box {
@@ -240,12 +263,12 @@ textarea {
   height: auto;
   background: url('../image/illustration-\ about\ me-\ mobile.png') 50% -1% no-repeat, url('../image/Mask\ Group.png') 100% -1% no-repeat;
   background-attachment: scroll;
+  margin-bottom: 20px;
 }
 
 .about-me-header {
-  margin-top: 60px;
-  margin-bottom: 20px;
   height: auto;
+  margin-bottom: 25px;
 }
 
 .box-container {
@@ -296,7 +319,6 @@ textarea {
 .head-contact {
   justify-items: center;
   height: 363px;
-  margin: 60px 0;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -340,4 +362,335 @@ textarea {
   width: 375px;
   background: url("../image/illustration-contact-form.png") 100% 77% no-repeat;
   background-attachment: scroll;
+}
+
+@media screen and (min-width: 900px) {
+  h1 {
+    margin: 15px 5px;
+  }
+
+  h2 {
+    width: auto;
+  }
+
+  /* header */
+  #welcome {
+    display: none;
+  }
+
+  #deskNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #navList {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 0;
+    align-content: center;
+    column-gap: 12px;
+  }
+
+  .navLink {
+    padding: 0;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #172b4d;
+  }
+
+  #phoneNav {
+    display: none;
+  }
+
+  .about-me {
+    background: url("../image/Action.png") none;
+    background-size: 0;
+  }
+
+  /* section about me */
+  #main {
+    background: url("../image/Header-llustration-desktop.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding-bottom: 100px;
+  }
+
+  #aboutBox {
+    width: 70%;
+    height: auto;
+  }
+
+  .me,
+  .whatIdo {
+    display: inline-block;
+    max-width: 95%;
+    max-height: auto;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  .paragrph {
+    max-width: 90%;
+    max-height: auto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  #social-media {
+    margin-bottom: 50px;
+  }
+
+  /* recent  */
+  #indicator {
+    display: none;
+  }
+
+  .box-articles {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 15px;
+  }
+
+  #recent-works {
+    margin-bottom: 100px;
+  }
+
+  /* about me */
+  #about-me {
+    margin-bottom: 150px;
+    height: 100vh;
+    background: url('../image/Desktop/oragamie2.svg') -0.5% 18% no-repeat, url('../image/Desktop/origamie1.svg') 100% -1.1% no-repeat;
+    background-attachment: scroll;
+    background-size: 15%, 11%;
+  }
+
+  .box-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 15px;
+  }
+
+  .about-me-header + p {
+    width: 70%;
+  }
+
+  /* footer */
+  .ContacMe {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 15px;
+    width: 100%;
+    height: 100vh;
+    background: url("../image/Desktop/collone.svg") 100% 5% no-repeat, url("../image/Desktop/pierre.svg") 14% 90% no-repeat, url("../image/Desktop/carre.svg") 0% 90% no-repeat, url(../image/Desktop/Rectangle\ 42.svg) 50% 94% no-repeat;
+    background-attachment: scroll;
+    background-size: 21.5%, 7%, 10%, 100%;
+  }
+
+  .head-contact {
+    width: 463px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+    margin-left: 80px;
+  }
+
+  .form-contact {
+    width: 82%;
+    align-items: flex-start;
+    margin-bottom: 100px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  #mailadress {
+    display: none;
+  }
+
+  .ContacMe #social-media {
+    grid-column: 2/ span 2;
+    margin: 5px 0;
+    align-self: flex-end;
+    border-top: 1px solid #ebf0ee;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  /* header */
+  #welcome {
+    display: none;
+  }
+
+  #deskNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #navList {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 0;
+    align-content: center;
+    column-gap: 12px;
+  }
+
+  .navLink {
+    padding: 0;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #172b4d;
+  }
+
+  #phoneNav {
+    display: none;
+  }
+
+  /* section about me */
+  #main {
+    background: url("../image/Header-llustration-desktop.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding-bottom: 100px;
+  }
+
+  .about-me {
+    background: url("../image/Action.png") none;
+    background-size: 0;
+  }
+
+  #aboutBox {
+    width: 70%;
+    height: auto;
+  }
+
+  .me,
+  .whatIdo {
+    display: inline-block;
+    max-width: 95%;
+    max-height: 100%;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  .paragrph {
+    max-width: 90%;
+    max-height: auto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  #social-media {
+    margin-bottom: 50px;
+  }
+
+  /* recent  */
+  #indicator {
+    display: none;
+  }
+
+  #recent-works {
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    align-items: center;
+    height: auto;
+  }
+
+  .box-articles {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    box-sizing: border-box;
+  }
+
+  #recent-works > h2 {
+    margin: auto;
+    width: auto;
+    margin-bottom: 25px;
+  }
+
+  .box {
+    width: 1fr;
+    height: 1fr;
+  }
+
+  #about-me {
+    margin-bottom: 150px;
+    height: auto;
+    background: url('../image/Desktop/oragamie2.svg') -5% 10% no-repeat, url('../image/Desktop/origamie1.svg') 110% 0% no-repeat;
+    background-attachment: scroll;
+    background-size: 20%, 20%;
+  }
+
+  .box-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    box-sizing: border-box;
+  }
+
+  .about-me-header + p {
+    width: 70%;
+  }
+
+  /* footer */
+
+  .ContacMe {
+    background: url("../image/Desktop/collone.svg") 100% 92% no-repeat, url("../image/Desktop/pierre.svg") 25% 90% no-repeat, url("../image/Desktop/carre.svg") 0% 90% no-repeat;
+    background-attachment: scroll;
+    background-size: 20%, 12%, 16%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    width: auto;
+    height: 100vh;
+  }
+
+  .head-contact {
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+  }
+
+  .form-contact {
+    box-sizing: border-box;
+    align-items: flex-start;
+    margin-bottom: 100px;
+  }
+
+  input,
+  textarea {
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  #mailadress {
+    display: none;
+  }
+
+  .ContacMe #social-media {
+    grid-column: 2/ span 2;
+    margin: 5px 0;
+    align-self: flex-end;
+    border-top: 1px solid #ebf0ee;
+  }
 }
