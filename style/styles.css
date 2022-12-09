@@ -694,3 +694,12 @@ textarea {
     border-top: 1px solid #ebf0ee;
   }
 }
+
+.transition1 { 
+  transition: width 2s, height 2s;
+}
+
+.transition1:hover {
+  width: 150%;
+  height: 150%;
+}
