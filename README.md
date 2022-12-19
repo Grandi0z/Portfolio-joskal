@@ -166,7 +166,7 @@ You can deploy this project using:
 👤 **Author1**
 
 - GitHub: [@Grandi0z](https://github.com/Grandi0z)
-- Twitter: [@wa_inje](https://twitter.com/wa_inje)
+- Twitter: [@wa_inje](https://twitter.com/Joseph_LSK)
 - LinkedIn: [Joeph L Kausi](https://linkedin.com/in/Joeph_l_Kausi)
 
 
