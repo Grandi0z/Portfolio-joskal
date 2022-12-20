@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?=Inter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <title>Joseph Kausi'Portfoliot</title>
 </head>
 <body>
@@ -21,10 +21,19 @@
             </nav>
             <nav id="phoneNav">
                 <a href="#">
-                    <img src="image/Icon-Menu.png" alt="humburger-btn" id="humburger-btn">
-                </a>
-            </nav>   
+                    <i class="bi bi-x-lg hidden" id="x-btn"></i>  
+                    <img src="image/Icon-Menu.png" alt="humburger-btn" id="humburger-btn">   
+                </a> 
+            </nav>
+              
         </header>
+        <nav id="hiddenNav" class="hiddenNav">
+            <ul id="hiddenList">
+                <li class="hiddenListContent"><a href="#aboutBox"> Portfolio</a></li>
+                <li class="hiddenListContent"><a href="#about-me"> About </a></li>
+                <li class="hiddenListContent"><a href="#ContacMe"> Contact</a></li>
+            </ul>
+        </nav>
 
         <section class="about-me ">
             <div id="aboutBox">

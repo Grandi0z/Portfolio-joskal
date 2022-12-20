@@ -1,4 +1,6 @@
 /* general */
+
+
 * {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -61,6 +63,14 @@ button:hover {
 
 button :active {
   filter: contrast(60%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden{
+  display: none;
 }
 
 .btn-big {
@@ -139,6 +149,58 @@ textarea {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+}
+
+.hiddenNav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  margin-top: 50px;
+  justify-content: left;
+  z-index: 98;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.displayhiddenNav {
+  left: 0;
+}
+
+#hiddenList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3%;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  
+}
+
+.hiddenListContent>a {
+  color: #3A4A42;
+}
+
+#x-btn {
+  position:relative;
+  right: 50%;
+  bottom: 50%;
+  transition: transform 2s;
+  color: black;
+}
+
+#x-btn:active { 
+  transform: rotate(180deg);
+}
+
+#humburger-btn {
+  transition: transform 2s;
+}
+
+#humburger-btn:active {
+  transform: rotate(-180deg);
 }
 
 /* style main section */
