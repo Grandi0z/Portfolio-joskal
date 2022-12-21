@@ -615,10 +615,6 @@ textarea {
     box-sizing: border-box;
   }
 
-  .popupProjectDetail {
-    visibility: hidden;
-  }
-
   #contentProject {
     display: flex;
     flex-direction: column;
@@ -877,20 +873,7 @@ textarea {
   }
 
   /* pop project details */
-  .projectDetail {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    top: 0;
-    right: 0;
-    width: 100%;
-    max-height: 100vh;
-    z-index: 99;
-    margin-top: 0;
-    background-color: #fff;
-    overflow-y: auto;
-    box-sizing: border-box;
-  }
+ 
 
   .popupProjectDetail {
     visibility: hidden;
