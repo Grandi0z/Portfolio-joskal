@@ -157,12 +157,10 @@ textarea {
 /* hidden nav menu */
 .hiddenNav {
   display: flex;
-  position: fixed;
   top: 0;
   left: 100%;
   margin-top: 50px;
   justify-content: left;
-  z-index: 98;
   width: 100%;
   min-height: 100vh;
   background-color: #fff;
