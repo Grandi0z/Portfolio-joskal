@@ -141,3 +141,8 @@ function showDetails(index){
         }   
     
 }
+const projectSection2 = document.querySelector('.box-articles');
+projectSection.addEventListener('click', (event) => {
+  const index = event.target.id;
+  buildDetails(index);
+});
