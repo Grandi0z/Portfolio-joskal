@@ -1,6 +1,5 @@
 /* general */
 
-
 * {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -70,8 +69,7 @@ a {
   text-decoration: none;
 }
 
-.hidden{
-  
+.hidden {
   visibility: hidden;
 }
 
@@ -154,6 +152,7 @@ textarea {
   font-size: 20px;
   line-height: 28px;
 }
+
 /* hidden nav menu */
 .hiddenNav {
   display: flex;
@@ -180,11 +179,10 @@ textarea {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  
 }
 
-.hiddenListContent>a {
-  color: #3A4A42;
+.hiddenListContent > a {
+  color: #3a4a42;
 }
 
 #x-btn {
@@ -195,7 +193,7 @@ textarea {
   cursor: pointer;
 }
 
-#x-btn:active { 
+#x-btn:active {
   transform: rotate(180deg);
 }
 
@@ -328,12 +326,11 @@ textarea {
   top: 0;
   right: 0;
   width: 100%;
-  max-height:100vh;
+  max-height: 100vh;
   z-index: 99;
   margin-top: 0;
   background-color: #fff;
   overflow-y: scroll;
-
 }
 
 .popupProjectDetail {
@@ -345,11 +342,10 @@ textarea {
   flex-direction: column;
   justify-content: left;
   width: 100%;
-  max-height:100vh;
+  max-height: 100vh;
   background-color: #fff;
   transition: 0.4s;
   margin: 10px;
-  
 }
 
 .imageDetail {
@@ -361,7 +357,7 @@ textarea {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   text-align: left;
 }
 
@@ -391,18 +387,6 @@ textarea {
   top: 4.5%;
   cursor: pointer;
 }
-
-/* #x-btn:active { 
-  transform: rotate(180deg);
-}
-
-#humburger-btn {
-  transition: transform 2s;
-}
-
-#humburger-btn:active {
-  transform: rotate(-180deg);
-} */
 
 /* section 3 : about me */
 #about-me {
