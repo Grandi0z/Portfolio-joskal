@@ -52,7 +52,7 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://w3.org/">HTML & CSS</a></li>
+    <li><a href="https://w3.org/">HTML, CSS and JavaScript</a></li>
   </ul>
 </details>
 
