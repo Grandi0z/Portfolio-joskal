@@ -188,6 +188,8 @@ textarea {
   text-align: center;
   color: #172b4d;
   max-width: 327px;
+  position: fixed;
+  right: 2.5%;
   max-height: 164px;
   margin-top: 0;
 }
@@ -238,7 +240,7 @@ textarea {
   align-items: center;
 }
 
-#recent-works > h2 {
+#recent-works>h2 {
   margin-top: 0;
 }
 
@@ -477,7 +479,7 @@ textarea {
     column-gap: 15px;
   }
 
-  .about-me-header + p {
+  .about-me-header+p {
     width: 70%;
   }
 
@@ -527,6 +529,7 @@ textarea {
 }
 
 @media screen and (min-width: 500px) and (max-width: 900px) {
+
   /* header */
   #welcome {
     display: none;
@@ -620,7 +623,7 @@ textarea {
     box-sizing: border-box;
   }
 
-  #recent-works > h2 {
+  #recent-works>h2 {
     margin: auto;
     width: auto;
     margin-bottom: 25px;
@@ -646,7 +649,7 @@ textarea {
     box-sizing: border-box;
   }
 
-  .about-me-header + p {
+  .about-me-header+p {
     width: 70%;
   }
 
