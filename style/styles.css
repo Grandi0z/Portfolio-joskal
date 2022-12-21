@@ -1,4 +1,5 @@
 /* general */
+
 * {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -53,6 +54,7 @@ button {
   background: #ebf0ee;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 button:hover {
@@ -61,6 +63,14 @@ button:hover {
 
 button :active {
   filter: contrast(60%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .btn-big {
@@ -74,6 +84,7 @@ button :active {
   color: #fff;
   margin: 0;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .btn-big:hover {
@@ -92,6 +103,7 @@ button :active {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #36b37e;
+  cursor: pointer;
 }
 
 .btn-style-2 :hover {
@@ -141,6 +153,58 @@ textarea {
   line-height: 28px;
 }
 
+/* hidden nav menu */
+.hiddenNav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  margin-top: 50px;
+  justify-content: left;
+  z-index: 98;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.displayhiddenNav {
+  left: 0;
+}
+
+#hiddenList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3%;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.hiddenListContent > a {
+  color: #3a4a42;
+}
+
+#x-btn {
+  position: fixed;
+  right: 2.5%;
+  transition: transform 2s;
+  color: black;
+  cursor: pointer;
+}
+
+#x-btn:active {
+  transform: rotate(180deg);
+}
+
+#humburger-btn {
+  transition: transform 2s;
+}
+
+#humburger-btn:active {
+  transform: rotate(-180deg);
+}
+
 /* style main section */
 .about-me {
   background: url("../image/mainBackGround.png") no-repeat;
@@ -188,7 +252,6 @@ textarea {
   text-align: center;
   color: #172b4d;
   max-width: 327px;
-  max-height: 164px;
   margin-top: 0;
 }
 
@@ -208,9 +271,9 @@ textarea {
 
 /* section 2 : my recent works */
 #recent-works {
-  display: grid;
-  grid-template-columns: 1;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: auto;
   margin-bottom: 40px;
 }
@@ -254,6 +317,75 @@ textarea {
   margin-bottom: 25px;
   padding: 0;
   column-gap: 9px;
+}
+
+/* pop project details */
+.projectDetail {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-height: 100vh;
+  z-index: 99;
+  margin-top: 0;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.popupProjectDetail {
+  visibility: hidden;
+}
+
+#contentProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  max-height: 100vh;
+  background-color: #fff;
+  transition: 0.4s;
+  margin: 10px;
+}
+
+.imageDetail {
+  min-width: 100%;
+  height: 40%;
+}
+
+.titleDetail {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  text-align: left;
+}
+
+.descritionDetail {
+  height: auto;
+  text-align: left;
+  min-width: 100%;
+}
+
+.btn-liveSource {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  align-content: center;
+  column-gap: 5px;
+}
+
+.in-btn {
+  width: 100%;
+  min-height: 48px;
+}
+
+#xDisplayProject {
+  color: #000;
+  position: absolute;
+  right: 9%;
+  top: 4.5%;
+  cursor: pointer;
 }
 
 /* section 3 : about me */
