@@ -5,9 +5,6 @@
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b># Joseph's Portfolio</b></h3>
 
 </div>
@@ -52,7 +49,7 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://w3.org/">HTML & CSS</a></li>
+    <li><a href="https://w3.org/">HTML, CSS and JavaS</a></li>
   </ul>
 </details>
 
@@ -166,8 +163,8 @@ You can deploy this project using:
 👤 **Author1**
 
 - GitHub: [@Grandi0z](https://github.com/Grandi0z)
-- Twitter: [@wa_inje](https://twitter.com/Joseph_LSK)
-- LinkedIn: [Joeph L Kausi](https://linkedin.com/in/Joeph_l_Kausi)
+- Twitter: [@Joseph_LSK](https://twitter.com/Joseph_LSK)
+- LinkedIn: [Joseph L Kausi](https://linkedin.com/in/Joeph_l_Kausi)
 
 
 
@@ -237,7 +234,5 @@ I would like to thank Microverse team for every efforts they did specially Mr.
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
