@@ -105,8 +105,8 @@ btnSource.className = 'btn-big in-btn';
 btnLive.className = 'btn-big in-btn';
 btnSource.type = 'submit';
 btnLive.type = 'submit';
-btnSource.innerHTML = `See live <img src="image/Iconlive.svg"></img>`;
-btnLive.innerHTML = `See source <img src="image/IconGitHub.svg">`;
+btnSource.innerHTML = 'See live <img src="image/Iconlive.svg"></img>';
+btnLive.innerHTML = 'See source <img src="image/IconGitHub.svg">';
 
 // creation list of big buttons
 for (let i = 0; i < 2; i += 1) {
@@ -119,10 +119,10 @@ xButton.addEventListener('click', () => {
   listTechnologie.textContent = '';// erase avery bottons in the list
 });
 
-//build detail box
+// build detail box
 function buildDetails(index) {
   box.classList.remove('popupProjectDetail');
-    // add values to element
+  // add values to element
   imageProject.src = arrProjects[index].image;
   titleProject.textContent = arrProjects[index].title;
   descriptionProject.textContent = arrProjects[index].description;
@@ -131,17 +131,21 @@ function buildDetails(index) {
   }
   btnLive.formaction = arrProjects[index].linkLive;
   btnSource.formaction = arrProjects[index].linkSource;
-    // add to body
+  // add to body
   liElt[0].appendChild(btnSource);
   liElt[1].appendChild(btnLive);
   listLiveSource.append(liElt[0]);
   listLiveSource.append(liElt[1]);
-    // add elt to parent
+  // add elt to parent
   const arrChild = [xButton, imageProject, titleProject,
     listTechnologie, descriptionProject, listLiveSource];
   for (let i = 0; i < arrChild.length; i += 1) {
     contenainer.appendChild(arrChild[i]);
   }
 }
-//put project section in a variable to add a listener
-
+// put project section in a variable to add a listener
+const projectSection = document.querySelector('.box-articles');
+projectSection.addEventListener('click', (event) => {
+  const index = event.target.id;
+  buildDetails(index);
+});
