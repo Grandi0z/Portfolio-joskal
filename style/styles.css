@@ -188,7 +188,8 @@ textarea {
 }
 
 #x-btn {
-  position: absolute;
+  position: fixed;
+  right: 2.5%;
   transition: transform 2s;
   color: black;
   cursor: pointer;
