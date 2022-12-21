@@ -142,11 +142,6 @@ function buildDetails(index) {
   for (let i = 0; i < arrChild.length; i += 1) {
     contenainer.appendChild(arrChild[i]);
   }
-  console.log(btnLive)
 }
 //put project section in a variable to add a listener
-const projectSection = document.querySelector('.box-articles');
-projectSection.addEventListener('click', (event) => {
-  const index = event.target.id;
-  buildDetails(index);
-});
+
