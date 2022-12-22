@@ -150,7 +150,3 @@ projectSection.addEventListener('click', (event) => {
   const index = event.target.id;
   buildDetails(index);
 });
-
-
-
-
