@@ -181,7 +181,7 @@ textarea {
   line-height: 44px;
 }
 
-.hiddenListContent > a {
+.hiddenListContent>a {
   color: #3a4a42;
 }
 
@@ -252,7 +252,7 @@ textarea {
   text-align: center;
   color: #172b4d;
   max-width: 327px;
-  margin-top: 0;
+
 }
 
 /* style soccial-media links */
@@ -301,7 +301,7 @@ textarea {
   align-items: center;
 }
 
-#recent-works > h2 {
+#recent-works>h2 {
   margin-top: 0;
 }
 
@@ -615,6 +615,10 @@ textarea {
     box-sizing: border-box;
   }
 
+  .popupProjectDetail {
+    visibility: hidden;
+  }
+
   #contentProject {
     display: flex;
     flex-direction: column;
@@ -699,7 +703,7 @@ textarea {
     column-gap: 15px;
   }
 
-  .about-me-header + p {
+  .about-me-header+p {
     width: 70%;
   }
 
@@ -749,6 +753,7 @@ textarea {
 }
 
 @media screen and (min-width: 500px) and (max-width: 900px) {
+
   /* header */
   #welcome {
     display: none;
@@ -811,6 +816,21 @@ textarea {
     letter-spacing: 0.37px;
   }
 
+  .projectDetail {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-height: 100vh;
+    z-index: 99;
+    margin-top: 0;
+    background-color: #fff;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
   .paragrph {
     max-width: 90%;
     max-height: auto;
@@ -842,7 +862,7 @@ textarea {
     box-sizing: border-box;
   }
 
-  #recent-works > h2 {
+  #recent-works>h2 {
     margin: auto;
     width: auto;
     margin-bottom: 25px;
@@ -868,12 +888,12 @@ textarea {
     box-sizing: border-box;
   }
 
-  .about-me-header + p {
+  .about-me-header+p {
     width: 70%;
   }
 
   /* pop project details */
- 
+
 
   .popupProjectDetail {
     visibility: hidden;
