@@ -160,3 +160,12 @@ function isEmailValid (email) {
   const regex=/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
   return regex.test(String(email))
  }
+ 
+ function emailValidation() {
+  const userEmail = email.value.trim()
+  if (!isEmailValid(userEmail)) {
+    errorScreen.textContent="Please Email must be in lowercase"
+    email.classList.add("error")
+    email.classList.remove("success")
+  }    
+}
