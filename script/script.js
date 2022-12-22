@@ -109,7 +109,6 @@ btnSource.innerHTML = 'See live <img src="image/Iconlive.svg"></img>';
 btnLive.innerHTML = 'See source <img src="image/IconGitHub.svg">';
 
 // creation list of big buttons
-xxxxx
 
 // build detail box
 function buildDetails(index) {
@@ -136,4 +135,5 @@ function buildDetails(index) {
   }
 }
 // put project section in a variable to add a listener
+
 

@@ -729,11 +729,11 @@ textarea {
     margin-bottom: 100px;
   }
 
-  input,
-  textarea {
+  .input-form {
     width: 100%;
     margin-bottom: 0;
     padding-bottom: 0;
+    outline: none;
   }
 
   #mailadress {
