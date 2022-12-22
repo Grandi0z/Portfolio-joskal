@@ -150,3 +150,13 @@ projectSection.addEventListener('click', (event) => {
   const index = event.target.id;
   buildDetails(index);
 });
+
+//FORM VALIDATION
+const email=document.getElementById("email")
+const form=document.getElementById("form-contact")
+const errorScreen=document.getElementById("errorMsg")
+
+function isEmailValid (email) {
+  const regex=/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  return regex.test(String(email))
+ }
