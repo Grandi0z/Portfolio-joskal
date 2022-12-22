@@ -32,7 +32,7 @@ document.addEventListener('click', () => {
 const objProject = {
   title: 'Keeping track of hundreds of components',
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  image: 'image/SnapshootProject.svg',
+  image: 'image/projet1.png',
   technologie: ['Ruby on Rails', 'css', 'JavaScript', 'html'],
   linkSource: 'https//www....',
   linkLive: 'https//www....',
@@ -40,7 +40,7 @@ const objProject = {
 const objProject1 = {
   title: 'Project 2',
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  image: 'image/projet2.jpg',
+  image: 'image/projet3.png',
   technologie: ['Ruby on Rails', 'JavaScript'],
   linkSource: 'https//www.githubrepo',
   linkLive: 'https//www.gitpages',
@@ -48,7 +48,7 @@ const objProject1 = {
 const objProject2 = {
   title: 'Project 3',
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  image: 'image/projet1.png',
+  image: 'image/projet6.png',
   technologie: ['Ruby on Rails', 'JavaScript'],
   linkSource: 'https//www.githubrepo',
   linkLive: 'https//www.gitpages',
@@ -56,7 +56,7 @@ const objProject2 = {
 const objProject3 = {
   title: 'Project 4',
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  image: 'image/projet6.png',
+  image: 'image/projet2.jpg',
   technologie: ['Sql', 'Java'],
   linkSource: 'https//www.githubrepo',
   linkLive: 'https//www.gitpages',
@@ -77,6 +77,7 @@ const objProject5 = {
   linkSource: 'https//www.githubrepo',
   linkLive: 'https//www.gitpages',
 };
+// add project detail in in-box section
 // variable creation and initialization
 const arrProjects = [objProject, objProject1, objProject2,
   objProject3, objProject4, objProject5];// store project in an array
@@ -149,4 +150,3 @@ projectSection.addEventListener('click', (event) => {
   const index = event.target.id;
   buildDetails(index);
 });
-

@@ -181,7 +181,7 @@ textarea {
   line-height: 44px;
 }
 
-.hiddenListContent>a {
+.hiddenListContent > a {
   color: #3a4a42;
 }
 
@@ -252,7 +252,6 @@ textarea {
   text-align: center;
   color: #172b4d;
   max-width: 327px;
-
 }
 
 /* style soccial-media links */
@@ -293,15 +292,20 @@ textarea {
   background: #fff;
   border-radius: 8px;
   width: 320px;
-  height: 204px;
+  height: 60%;
   color: #fff;
-  top: calc(54.5%);
+  top: 0;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-#recent-works>h2 {
+.img-box {
+  display: block;
+  min-height: 40%;
+}
+
+#recent-works > h2 {
   margin-top: 0;
 }
 
@@ -703,7 +707,7 @@ textarea {
     column-gap: 15px;
   }
 
-  .about-me-header+p {
+  .about-me-header + p {
     width: 70%;
   }
 
@@ -753,7 +757,6 @@ textarea {
 }
 
 @media screen and (min-width: 500px) and (max-width: 900px) {
-
   /* header */
   #welcome {
     display: none;
@@ -847,7 +850,7 @@ textarea {
     box-sizing: border-box;
   }
 
-  #recent-works>h2 {
+  #recent-works > h2 {
     margin: auto;
     width: auto;
     margin-bottom: 25px;
@@ -873,7 +876,7 @@ textarea {
     box-sizing: border-box;
   }
 
-  .about-me-header+p {
+  .about-me-header + p {
     width: 70%;
   }
 
