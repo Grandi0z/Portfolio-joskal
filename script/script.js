@@ -109,7 +109,15 @@ btnSource.innerHTML = 'See live <img src="image/Iconlive.svg"></img>';
 btnLive.innerHTML = 'See source <img src="image/IconGitHub.svg">';
 
 // creation list of big buttons
-xxxxx
+for (let i = 0; i < 2; i += 1) {
+  liElt[i] = document.createElement('li');
+}
+// click on x bouton
+xButton.addEventListener('click', () => {
+  box.classList.add('popupProjectDetail');
+  contenainer.textContent = '';// erase containts in the container
+  listTechnologie.textContent = '';// erase avery bottons in the list
+});
 
 // build detail box
 function buildDetails(index) {
