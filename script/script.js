@@ -169,3 +169,8 @@ function isEmailValid (email) {
     email.classList.remove("success")
   }    
 }
+
+form.addEventListener('submit',function(event){
+  event.preventDefault()
+  emailValidation ()
+})
