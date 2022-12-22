@@ -60,17 +60,19 @@
     </section>
     <section id="recent-works">
 
-
+        <div id="popupContainer">
             <article id="projectDetail" class="projectDetail">
                 <div id="contentProject">
+
                 </div>
             </article>
-
+        </div>
 
         <h2>My Recent Works</h2>
         <img src="image/Indicator.png" alt="Indicator" id="indicator">
         <section class="box-articles">
             <article class="box">
+                <img src="image/projet1.png" alt="project 1" class="img-box">
                 <section class="in-box">
                     <h3 class="">Multi-Post Stories Gain+Glory</h3>
                     <ul class="btn-language1 ">
@@ -83,6 +85,7 @@
                 </section>
             </article>
             <article class="box">
+                <img src="image/projet3.png" alt="project 1" class="img-box">
                 <section class="in-box">
                     <h3 class="">Multi-Post Stories Gain+Glory</h3>
                     <ul class="btn-language1 ">
@@ -96,6 +99,7 @@
             </article>
 
             <article class="box">
+                <img src="image/projet6.png" alt="project 1" class="img-box">
                 <section class="in-box">
                     <h3 class="">Multi-Post Stories Gain+Glory</h3>
                     <ul class="btn-language1 ">
@@ -108,6 +112,7 @@
                 </section>
             </article>
             <article class="box">
+                <img src="image/projet2.jpg" alt="project 1" class="img-box">
                 <section class="in-box">
                     <h3 class="">Multi-Post Stories Gain+Glory</h3>
                     <ul class="btn-language1 ">
@@ -120,6 +125,7 @@
                 </section>
             </article>
             <article class="box">
+                <img src="image/projet5.png" alt="project 1" class="img-box">
                 <section class="in-box">
                     <h3 class="">Multi-Post Stories Gain+Glory</h3>
                     <ul class="btn-language1 ">
@@ -132,6 +138,7 @@
                 </section>
             </article>
             <article class="box">
+                <img src="image/projet4.png" alt="project 1" class="img-box">
                 <section class="in-box">
                     <h3 class="">Multi-Post Stories Gain+Glory</h3>
                     <ul class="btn-language1 ">
@@ -193,11 +200,12 @@
         <p class="head-contact">
             I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
         </p>
-        <form action="https://formspree.io/f/xjvznrod" method="POST" class="form-contact">
-            <input type="text" placeholder="  Full name" name="name" id="name" required maxlength="30">
-            <input type="email" placeholder="  Email address" name="email" id="email" required>
-            <textarea name="message" id="message" cols="30" rows="10" required maxlength="500" placeholder="  Enter text here"></textarea>
+        <form action="https://formspree.io/f/xjvznrod" method="POST" class="form-contact" id="form-contact">
+            <input type="text" placeholder="  Full name" name="name" id="name" required maxlength="30" class="input-form">
+            <input type="email" placeholder="  Email address" name="email" id="email" required class="input-form">
+            <textarea name="message" id="message" cols="30" rows="10" required maxlength="500" placeholder="  Enter text here" class="input-form"></textarea>
             <button type="submit" class="btn-big" id="resume">Get In touch</button>
+            <span id="errorMsg"></span>
         </form>
         <ul id="social-media">
             <li><a href="https://twitter.com/Joseph_LSK" target="_blank"><img class="transition1" src="image/twitter.png" alt="twitter (open in new windows)"></a> </li>

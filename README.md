@@ -163,8 +163,8 @@ You can deploy this project using:
 👤 **Author1**
 
 - GitHub: [@Grandi0z](https://github.com/Grandi0z)
-- Twitter: [@wa_inje](https://twitter.com/Joseph_LSK)
-- LinkedIn: [Joeph L Kausi](https://linkedin.com/in/Joeph_l_Kausi)
+- Twitter: [@Joseph_LSK](https://twitter.com/Joseph_LSK)
+- LinkedIn: [Joseph L Kausi](https://linkedin.com/in/Joeph_l_Kausi)
 
 
 
