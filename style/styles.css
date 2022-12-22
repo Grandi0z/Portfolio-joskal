@@ -335,14 +335,22 @@ textarea {
   margin: auto;
   background-color: #fff;
   overflow-y: auto;
+<<<<<<< HEAD
   padding: 0;
+=======
+  padding: 0
+>>>>>>> 319a1bfda6c545ddcb6f1edb4637a726207f5290
 }
 
 .popupProjectDetail {
   visibility: hidden;
 }
 
+<<<<<<< HEAD
 #popupContainer {
+=======
+#popupContainer{
+>>>>>>> 319a1bfda6c545ddcb6f1edb4637a726207f5290
   background-color: rgba(97, 86, 86, 0.922);
 }
 
@@ -530,6 +538,10 @@ textarea {
   height: 13px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 319a1bfda6c545ddcb6f1edb4637a726207f5290
 @media screen and (min-width: 900px) {
   h1 {
     margin: 15px 5px;
@@ -641,7 +653,7 @@ textarea {
     margin-top: auto;
     background-color: #fff;
     overflow-y: auto;
-    box-sizing: border-box;
+    box-sizing: border-box
   }
 
   .popupProjectDetail {

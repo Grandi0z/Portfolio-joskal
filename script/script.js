@@ -151,4 +151,6 @@ projectSection.addEventListener('click', (event) => {
   buildDetails(index);
 });
 
-// Font validation
+
+
+
