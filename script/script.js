@@ -178,6 +178,11 @@ function emailValidation() {
     errorScreen.textContent = 'Please Email must be all in lowercase';
     email.classList.add('error');
     email.classList.remove('success');
+  } else {
+    errorScreen.textContent = '';
+    email.classList.add('success');
+    email.classList.remove('error');
+    form.submit();
   }
 }
 
