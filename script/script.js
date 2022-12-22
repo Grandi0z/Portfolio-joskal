@@ -81,8 +81,16 @@ const objProject5 = {
 // variable creation and initialization
 const arrProjects = [objProject, objProject1, objProject2,
   objProject3, objProject4, objProject5];// store project in an array
-const contenainer = document.querySelector('#contentProject');
-const box = document.querySelector('#projectDetail');
+const contenainer = document.createElement('div');
+contenainer.id = 'contentProject';
+contenainer.className = 'contentProject';
+const divCotainer = document.createElement('div');
+divCotainer.id = 'popupContainer';
+const articleContainer = document.createElement('article');
+articleContainer.id = 'projectDetail';
+articleContainer.className = 'projectDetail';
+const sectionRecentWork = document.getElementById('recent-works');
+
 const xButton = document.createElement('i');
 xButton.className = 'bi bi-x-lg';
 xButton.id = 'xDisplayProject';
@@ -115,14 +123,14 @@ for (let i = 0; i < 2; i += 1) {
 }
 // click on x bouton
 xButton.addEventListener('click', () => {
-  box.classList.add('popupProjectDetail');
+  articleContainer.classList.add('popupProjectDetail');
   contenainer.textContent = '';// erase containts in the container
   listTechnologie.textContent = '';// erase avery bottons in the list
 });
 
 // build detail box
 function buildDetails(index) {
-  box.classList.remove('popupProjectDetail');
+  articleContainer.classList.remove('popupProjectDetail');
   // add values to element
   imageProject.src = arrProjects[index].image;
   titleProject.textContent = arrProjects[index].title;
@@ -143,6 +151,9 @@ function buildDetails(index) {
   for (let i = 0; i < arrChild.length; i += 1) {
     contenainer.appendChild(arrChild[i]);
   }
+  articleContainer.appendChild(contenainer);
+  divCotainer.appendChild(articleContainer);
+  sectionRecentWork.appendChild(divCotainer);
 }
 // put project section in a variable to add a listener
 const projectSection = document.querySelector('.box-articles');
@@ -151,26 +162,26 @@ projectSection.addEventListener('click', (event) => {
   buildDetails(index);
 });
 
-//FORM VALIDATION
-const email=document.getElementById("email")
-const form=document.getElementById("form-contact")
-const errorScreen=document.getElementById("errorMsg")
+// FORM VALIDATION
+const email = document.getElementById('email');
+const form = document.getElementById('form-contact');
+const errorScreen = document.getElementById('errorMsg');
 
-function isEmailValid (email) {
-  const regex=/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-  return regex.test(String(email))
- }
- 
- function emailValidation() {
-  const userEmail = email.value.trim()
-  if (!isEmailValid(userEmail)) {
-    errorScreen.textContent="Please Email must be in lowercase"
-    email.classList.add("error")
-    email.classList.remove("success")
-  }    
+function isEmailValid(email) {
+  const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  return regex.test(String(email));
 }
 
-form.addEventListener('submit',function(event){
-  event.preventDefault()
-  emailValidation ()
-})
+function emailValidation() {
+  const userEmail = email.value.trim();
+  if (!isEmailValid(userEmail)) {
+    errorScreen.textContent = 'Please Email must be all in lowercase';
+    email.classList.add('error');
+    email.classList.remove('success');
+  }
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  emailValidation();
+});
