@@ -323,33 +323,39 @@ textarea {
   column-gap: 9px;
 }
 
-/* pop project details */
+/* popup project's details */
 .projectDetail {
   display: flex;
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 90%;
   max-height: 100vh;
   z-index: 99;
-  margin-top: 0;
+  margin: auto;
   background-color: #fff;
   overflow-y: auto;
+  padding: 0;
 }
 
 .popupProjectDetail {
   visibility: hidden;
 }
 
+#popupContainer {
+  background-color: rgba(97, 86, 86, 0.922);
+}
+
 #contentProject {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  width: 100%;
+  width: 90%;
   max-height: 100vh;
   background-color: #fff;
   transition: 0.4s;
-  margin: 10px;
+  margin: 24px;
+  margin-left: 5px;
 }
 
 .imageDetail {
@@ -392,7 +398,7 @@ textarea {
 #xDisplayProject {
   color: #000;
   position: absolute;
-  right: 9%;
+  right: 13%;
   top: 4.5%;
   cursor: pointer;
 }
@@ -505,6 +511,25 @@ textarea {
   background-attachment: scroll;
 }
 
+/* style client validation */
+.success {
+  border-color: #09c372;
+}
+
+.error {
+  border-color: #ff3860;
+}
+
+#email::after {
+  outline: none;
+}
+
+#errorMsg {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+
 @media screen and (min-width: 900px) {
   h1 {
     margin: 15px 5px;
@@ -613,7 +638,7 @@ textarea {
     width: 100%;
     max-height: 100vh;
     z-index: 99;
-    margin-top: 0;
+    margin-top: auto;
     background-color: #fff;
     overflow-y: auto;
     box-sizing: border-box;
@@ -627,11 +652,12 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    width: 97.7%;
+    width: 93.7%;
     max-height: 100vh;
     background-color: #fff;
     transition: 0.4s;
-    margin: 10px;
+    margin: 12px;
+    margin-bottom: 60px;
     box-sizing: border-box;
   }
 
@@ -658,7 +684,7 @@ textarea {
 
   .btn-liveSource {
     position: absolute;
-    right: 1%;
+    right: 3%;
     top: 64.5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -675,7 +701,7 @@ textarea {
   #xDisplayProject {
     color: #000;
     position: absolute;
-    right: 1%;
+    right: 3%;
     top: 0.6%;
     cursor: pointer;
     background: rgba(85, 84, 84, 0.4);
@@ -741,7 +767,6 @@ textarea {
     width: 100%;
     margin-bottom: 0;
     padding-bottom: 0;
-    outline: none;
   }
 
   #mailadress {
