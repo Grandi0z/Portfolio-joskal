@@ -816,21 +816,6 @@ textarea {
     letter-spacing: 0.37px;
   }
 
-  .projectDetail {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    top: 0;
-    right: 0;
-    width: 100%;
-    max-height: 100vh;
-    z-index: 99;
-    margin-top: 0;
-    background-color: #fff;
-    overflow-y: auto;
-    box-sizing: border-box;
-  }
-
   .paragrph {
     max-width: 90%;
     max-height: auto;
@@ -893,7 +878,20 @@ textarea {
   }
 
   /* pop project details */
-
+  .projectDetail {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-height: 100vh;
+    z-index: 99;
+    margin-top: 0;
+    background-color: #fff;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
 
   .popupProjectDetail {
     visibility: hidden;
