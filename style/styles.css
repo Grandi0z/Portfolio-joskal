@@ -338,7 +338,7 @@ textarea {
   padding: 0;
 }
 
-.popupProjectDetail {
+.destroyPopup {
   visibility: hidden;
 }
 
@@ -646,7 +646,7 @@ textarea {
     box-sizing: border-box;
   }
 
-  .popupProjectDetail {
+  .destroyPopup {
     visibility: hidden;
   }
 
@@ -922,7 +922,7 @@ textarea {
     box-sizing: border-box;
   }
 
-  .popupProjectDetail {
+  .destroyPopup {
     visibility: hidden;
   }
 

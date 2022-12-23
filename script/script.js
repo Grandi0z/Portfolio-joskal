@@ -1,22 +1,17 @@
+//HIDDEN NAV
 const humburgerBtn = document.querySelector('#humburger-btn');
 const xBtn = document.querySelector('#x-btn');
 const navHidden = document.querySelector('#hiddenNav');
 const welcomeMsg = document.querySelector('#welcome');
+const humBtn=document.querySelector("#humburgerContainer")
 
-humburgerBtn.addEventListener('click', (event) => {
+humBtn.addEventListener('click',event=>{
   humburgerBtn.classList.toggle('hidden');
   xBtn.classList.toggle('hidden');
   navHidden.classList.toggle('displayhiddenNav');
   welcomeMsg.classList.toggle('hidden');
   event.stopPropagation();
-});
-xBtn.addEventListener('click', (event) => {
-  humburgerBtn.classList.toggle('hidden');
-  xBtn.classList.toggle('hidden');
-  navHidden.classList.toggle('displayhiddenNav');
-  welcomeMsg.classList.toggle('hidden');
-  event.stopPropagation();
-});
+})
 
 document.addEventListener('click', () => {
   if (navHidden.classList.contains('displayhiddenNav')) {
@@ -77,10 +72,10 @@ const objProject5 = {
   linkSource: 'https//www.githubrepo',
   linkLive: 'https//www.gitpages',
 };
-// add project detail in in-box section
-// variable creation and initialization
+// store project in an array
 const arrProjects = [objProject, objProject1, objProject2,
-  objProject3, objProject4, objProject5];// store project in an array
+  objProject3, objProject4, objProject5];
+//container creation
 const contenainer = document.createElement('div');
 contenainer.id = 'contentProject';
 contenainer.className = 'contentProject';
@@ -90,7 +85,7 @@ const articleContainer = document.createElement('article');
 articleContainer.id = 'projectDetail';
 articleContainer.className = 'projectDetail';
 const sectionRecentWork = document.getElementById('recent-works');
-
+// variable creation and initialization  
 const xButton = document.createElement('i');
 xButton.className = 'bi bi-x-lg';
 xButton.id = 'xDisplayProject';
@@ -123,14 +118,14 @@ for (let i = 0; i < 2; i += 1) {
 }
 // click on x bouton
 xButton.addEventListener('click', () => {
-  articleContainer.classList.add('popupProjectDetail');
+  articleContainer.classList.add('destroyPopup');
   contenainer.textContent = '';// erase containts in the container
   listTechnologie.textContent = '';// erase avery bottons in the list
 });
 
 // build detail box
-function buildDetails(index) {
-  articleContainer.classList.remove('popupProjectDetail');
+function buildPopup(index) {
+  articleContainer.classList.remove('destroyPopup');
   // add values to element
   imageProject.src = arrProjects[index].image;
   titleProject.textContent = arrProjects[index].title;
@@ -138,28 +133,30 @@ function buildDetails(index) {
   for (let i = 0; i < arrProjects[index].technologie.length; i += 1) {
     listTechnologie.innerHTML += `<li><button type="button">${arrProjects[index].technologie[i]}</button></li>`;
   }
+
   btnLive.formaction = arrProjects[index].linkLive;
   btnSource.formaction = arrProjects[index].linkSource;
-  // add to body
-  liElt[0].appendChild(btnSource);
+  liElt[0].appendChild(btnSource);// add big-btn in li element
   liElt[1].appendChild(btnLive);
-  listLiveSource.append(liElt[0]);
+  listLiveSource.append(liElt[0]);//add li element in ul
   listLiveSource.append(liElt[1]);
   // add elt to parent
   const arrChild = [xButton, imageProject, titleProject,
     listTechnologie, descriptionProject, listLiveSource];
+
   for (let i = 0; i < arrChild.length; i += 1) {
     contenainer.appendChild(arrChild[i]);
   }
+
   articleContainer.appendChild(contenainer);
   divCotainer.appendChild(articleContainer);
   sectionRecentWork.appendChild(divCotainer);
 }
-// put project section in a variable to add a listener
+//add an EventListener to project section
 const projectSection = document.querySelector('.box-articles');
 projectSection.addEventListener('click', (event) => {
   const index = event.target.id;
-  buildDetails(index);
+  buildPopup(index);
 });
 
 // FORM VALIDATION
