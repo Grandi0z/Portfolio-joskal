@@ -1,23 +1,21 @@
-//HIDDEN NAV
+// HIDDEN NAV
 const humburgerBtn = document.querySelector('#humburger-btn');
 const xBtn = document.querySelector('#x-btn');
 const navHidden = document.querySelector('#hiddenNav');
 const welcomeMsg = document.querySelector('#welcome');
-const humBtn=document.querySelector("#humburgerContainer")
+const humBtn = document.querySelector('#humburgerContainer');
 
-humBtn.addEventListener('click',event=>{
+humBtn.addEventListener('click', (event) => {
   humburgerBtn.classList.toggle('hidden');
   xBtn.classList.toggle('hidden');
   navHidden.classList.toggle('displayhiddenNav');
-  welcomeMsg.classList.toggle('hidden');
   event.stopPropagation();
-})
+});
 
 document.addEventListener('click', () => {
   if (navHidden.classList.contains('displayhiddenNav')) {
     humburgerBtn.classList.remove('hidden');
     xBtn.classList.add('hidden');
-    welcomeMsg.classList.remove('hidden');
     navHidden.classList.remove('displayhiddenNav');
   }
 });
@@ -75,7 +73,7 @@ const objProject5 = {
 // store project in an array
 const arrProjects = [objProject, objProject1, objProject2,
   objProject3, objProject4, objProject5];
-//container creation
+// container creation
 const contenainer = document.createElement('div');
 contenainer.id = 'contentProject';
 contenainer.className = 'contentProject';
@@ -85,7 +83,7 @@ const articleContainer = document.createElement('article');
 articleContainer.id = 'projectDetail';
 articleContainer.className = 'projectDetail';
 const sectionRecentWork = document.getElementById('recent-works');
-// variable creation and initialization  
+// variable creation and initialization
 const xButton = document.createElement('i');
 xButton.className = 'bi bi-x-lg';
 xButton.id = 'xDisplayProject';
@@ -138,7 +136,7 @@ function buildPopup(index) {
   btnSource.formaction = arrProjects[index].linkSource;
   liElt[0].appendChild(btnSource);// add big-btn in li element
   liElt[1].appendChild(btnLive);
-  listLiveSource.append(liElt[0]);//add li element in ul
+  listLiveSource.append(liElt[0]);// add li element in ul
   listLiveSource.append(liElt[1]);
   // add elt to parent
   const arrChild = [xButton, imageProject, titleProject,
@@ -152,7 +150,7 @@ function buildPopup(index) {
   divCotainer.appendChild(articleContainer);
   sectionRecentWork.appendChild(divCotainer);
 }
-//add an EventListener to project section
+// add an EventListener to project section
 const projectSection = document.querySelector('.box-articles');
 projectSection.addEventListener('click', (event) => {
   const index = event.target.id;
@@ -175,12 +173,7 @@ function emailValidation() {
     errorScreen.textContent = 'Please Email must be all in lowercase';
     email.classList.add('error');
     email.classList.remove('success');
-  } else {
-    errorScreen.textContent = '';
-    email.classList.add('success');
-    email.classList.remove('error');
-    form.submit();
-  }
+  } 
 }
 
 form.addEventListener('submit', (event) => {
