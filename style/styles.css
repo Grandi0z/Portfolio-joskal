@@ -338,7 +338,7 @@ textarea {
   padding: 0;
 }
 
-.popupProjectDetail {
+.destroyPopup {
   visibility: hidden;
 }
 
@@ -526,8 +526,10 @@ textarea {
 
 #errorMsg {
   color: #ff3860;
-  font-size: 9px;
+  font-size: 15px;
+  bottom: 51px;
   height: 13px;
+  position: relative;
 }
 
 @media screen and (min-width: 900px) {
@@ -644,7 +646,7 @@ textarea {
     box-sizing: border-box;
   }
 
-  .popupProjectDetail {
+  .destroyPopup {
     visibility: hidden;
   }
 
@@ -920,7 +922,7 @@ textarea {
     box-sizing: border-box;
   }
 
-  .popupProjectDetail {
+  .destroyPopup {
     visibility: hidden;
   }
 
