@@ -74,7 +74,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://github.com/Grandi0z/Portfolio-setup-and-mobile-first)
+- [Live Demo Link](https://grandi0z.github.io/Portfolio-setup-and-mobile-first/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
