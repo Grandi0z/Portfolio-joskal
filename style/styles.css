@@ -326,7 +326,6 @@ textarea {
 /* popup project's details */
 .projectDetail {
   display: flex;
-  position: fixed;
   top: 0;
   right: 0;
   width: 90%;
