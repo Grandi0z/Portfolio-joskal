@@ -326,7 +326,6 @@ textarea {
 /* popup project's details */
 .projectDetail {
   display: flex;
-  position: fixed;
   top: 0;
   right: 0;
   width: 90%;
@@ -1035,6 +1034,7 @@ textarea {
     align-self: flex-end;
     border-top: 1px solid #ebf0ee;
   }
+  
 }
 
 .transition1 {
@@ -1045,3 +1045,4 @@ textarea {
   width: 150%;
   height: 150%;
 }
+
