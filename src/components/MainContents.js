@@ -2,7 +2,7 @@ import React from 'react';
 import NavBarMobile from './NavBarMobile';
 
 const MainContents = () => (
-  <div className="full-container h-full flex items-center justify-center section-main">
+  <div className="full-container h-full flex items-center justify-center section-main flex-col">
     <div className="md:hidden">
       <NavBarMobile />
     </div>
@@ -60,6 +60,20 @@ const MainContents = () => (
         </div>
       </li>
     </ul>
+    <div className="w-2/3 text-gray-200 text-center text-lg xs:bg-blue-600/60 md:bg-blue-600/0">
+      Ready to bring your ideas to life?
+      <p>
+        Whether it&apos;s creating a super-powered product, adding a touch of magic,
+        weaving fiction into a website or creating a manga-worthy feature, I&apos;ve
+        got you covered!
+      </p>
+      <p>
+        Take a look at some of my heroic work and experiences. If you like what
+        you see and have a project that&apos;s just waiting to become reality, don&apos;t
+        hesitate to contact me! Let&apos;s turn your creative dreams into an epic
+        adventure!
+      </p>
+    </div>
   </div>
 );
 

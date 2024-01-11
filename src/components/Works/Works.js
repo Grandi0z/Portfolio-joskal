@@ -37,31 +37,49 @@ const Works = () => {
     // {
     //   title: 'Blog App',
     //   photo: 'https://pixelmechanics.com.sg/wp-content/uploads/2019/04/css.jpg',
-    //   description: `Blog app is a web application that allows users to create and share their own 
-    //                   blogs with the world. Users can sign up for a free account, create a profile 
-    //                   with their name, photo, and bio, and start posting their thoughts, opinions, 
-    //                   stories, or anything else they want to share. Users can also comment on other 
-    //                   users’ posts, like them, and follow their favorite bloggers. Blog app is a 
-    //                   platform for expressing yourself, connecting with others, and discovering new 
-    //                   perspectives. Blog app is easy to use, secure, and fun. Whether you are a 
-    //                   beginner or a seasoned blogger, Blog app is the app for you.`,
+    //   description: `
+    //              Blog app is a web application that allows users to create and share their own
+    //              blogs with the world. Users can sign up for a free account, create a profile
+    //              with their name, photo, and bio, and start posting their thoughts, opinions,
+    //              stories, or anything else they want to share. Users can also comment on other
+    //              users’ posts, like them, and follow their favorite bloggers. Blog app is a
+    //              platform for expressing yourself, connecting with others, and discovering new
+    //              perspectives. Blog app is easy to use, secure, and fun. Whether you are a
+    //              beginner or a seasoned blogger, Blog app is the app for you.`,
     //   demoLive: '',
     //   code: 'https://github.com/Grandi0z/blog_rails',
-    //   technologies: [{ name: 'Ruby', color: '#ed6873' }, { name: 'Rails', color: '#fc0317' }, { name: 'Postgresql', color: '#68ceed' }, { name: 'Bootstrap', color: '#9123eb' }],
+    //   technologies: [
+    //         { name: 'Ruby', color: '#ed6873' }, { name: 'Rails', color: '#fc0317' },
+    //       { name: 'Postgresql', color: '#68ceed' }, { name: 'Bootstrap', color: '#9123eb' }],
     // },
     // {
     //   title: 'Recipe App',
-    //   photo: 'https://talks.freelancerepublik.com/wp-content/uploads/2021/12/banner_js.png',
-    //   description: `Recipe app application that allows users to create, share, and discover recipes. It has the following features:
+    //   photo: '
+    //    https://talks.freelancerepublik.com/wp-content/uploads/2021/12/banner_js.png',
+    //   description: `Recipe app application that allows users to create,
+    //          share, and discover recipes. It has the following features:
 
-    //     Users can sign up and log in with Devise, a gem that provides user authentication functionality. Users can create their own recipes with a name, description, ingredients, steps, and a public or private status. They can also edit or delete their recipes if they are the owners.
-    //     Users can view a list of their own recipes or a list of all public recipes created by other users. They can also search for recipes by name or filter them by date.
-    //     Users can view the details of a selected recipe, including the ingredients, steps, and a toggle button that allows them to make the recipe public or private. They can also see the name and email of the recipe owner if the recipe is public.
-    //     Users can create a food list with the name, quantity, and price of the food items they have. They can also edit or delete their food items.
-    //     Users can view a general shopping list that shows the food items that are missing for all their recipes. They can also see the total number of items and the total price of the missing food.`,
+    //     Users can sign up and log in with Devise, a gem that provides
+    //     user authentication functionality. Users can create their own recipes with
+    //     a name, description, ingredients, steps, and a public or private status.
+    //     They can also edit or delete their recipes if they are the owners.
+    //     Users can view a list of their own recipes or a list of all public
+    //     recipes created by other users. They can also search for recipes by
+    //     name or filter them by date.
+    //     Users can view the details of a selected recipe, including the ingredients,
+    //     steps, and a toggle button that allows them to make the recipe public or private.
+    //     They can also see the name and email of the recipe owner if the recipe is public.
+    //     Users can create a food list with the name, quantity, and price of the food items
+    //     they have.
+    //     They can also edit or delete their food items.
+    //     Users can view a general shopping list that shows the food items that are missing for
+    //     all their recipes. They can also see the total number of items and the total price
+    //     of the missing food.`,
     //   demoLive: '',
     //   code: 'https://github.com/Grandi0z/Recipe_app',
-    //   technologies: [{ name: 'Ruby on Rails', color: '#ed6873' }, { name: 'Postgresql', color: '#68ceed' }, { name: 'Bootstrap', color: '#9123eb' }],
+    //   technologies: [
+    //   { name: 'Ruby on Rails', color: '#ed6873' },
+    //    { name: 'Postgresql', color: '#68ceed' }, { name: 'Bootstrap', color: '#9123eb' }],
     // },
     {
       title: 'Companies metrics',
@@ -77,15 +95,18 @@ const Works = () => {
     },
     // {
     //   title: "Space Traveler's hub",
-    //   photo: 'https://res.cloudinary.com/dhko6cdgf/image/upload/v1704565748/josephIo/Images/Works/vwg1vkozzaxfag8r98lv.jpg',
-    //   description: `Space Travelers is a web application that allows users to learn about and 
-    //         participate in space exploration. The application retrieves missions and rockets 
-    //         from SpaceX and allows users to join missions and reserve rockets. Users can also 
-    //         create their own profiles and track their progress as they work towards becoming space 
-    //         travelers.`,
+    //   photo: '
+    //   https://res.cloudinary.com/dhko6cdgf/image/upload/v1704565748/josephIo/Images/Works/vwg1vkozzaxfag8r98lv.jpg',
+    //   description: `Space Travelers is a web application that allows users to learn about and
+    //         participate in space exploration. The application retrieves missions and rockets
+    //         from SpaceX and allows users to join missions and reserve rockets. Users can also
+    //         create their own profiles and track their progress as they work towards
+    //         becoming space travelers.`,
     //   demoLive: '',
     //   code: 'https://github.com/Grandi0z/Space_travelers_hub',
-    //   technologies: [{ name: 'JavaScript', color: '#d6cd1a' }, { name: 'React', color: '#05999c' }, { name: 'Redux', color: '#6c059c' }, { name: 'SpaceX API', color: '#042cbd' }],
+    //   technologies: [
+    //             { name: 'JavaScript', color: '#d6cd1a' }, { name: 'React', color: '#05999c' },
+    //             { name: 'Redux', color: '#6c059c' }, { name: 'SpaceX API', color: '#042cbd' }],
     // },
     {
       title: 'Math Magicians',
