@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;600;700;800&family=Poppins:wght@200;300;500;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Dosis', sans-serif;
+  }
+
+  .full-container {
+    @apply min-h-full min-w-full bg-transparent;
+  }
+
+  section {
+    @apply flex flex-col justify-around p-12 xs:px-0;
+  }
+
+  h1 {
+    @apply text-5xl text-center text-gray-300 font-bold;
+  }
+
+  h2 {
+    @apply text-4xl my-2 text-green-100 tracking-tight leading-10 font-bold sm:text-5xl sm:leading-none md:text-6xl uppercase;
+  }
+
+  h3 {
+    @apply text-gray-300; }
+
+  .title {
+    @apply transition duration-0 hover:duration-150;
+  }
+
+  .bg-object {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500
+      hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500;
+  }
+}
