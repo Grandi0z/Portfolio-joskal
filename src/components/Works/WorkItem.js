@@ -76,7 +76,7 @@ const WorkItem = (props) => {
         </div>
       </div>
       <div className={isModalOpen ? 'showWorkModal' : 'hidden'}>
-        <WorkModal project={project} />
+        <WorkModal project={project} setIsModalOpen={setIsModalOpen} />
       </div>
     </button>
   );

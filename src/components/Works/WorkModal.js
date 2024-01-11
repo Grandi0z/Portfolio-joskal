@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import UsedTechs from '../UsedTechs/UsedTechs';
 
 const WorkModal = (props) => {
-  const { project } = props;
+  const { project, setIsModalOpen } = props;
   return (
     <div className="flex items-center justify-center min-h-screen p-4 bg-gray-800 bg-opacity-50">
       <div className="w-full max-w-2xl bg-white rounded-lg shadow-md overflow-hidden mx-2 md:mx-0 dark:bg-gray-900">
@@ -12,9 +12,8 @@ const WorkModal = (props) => {
           <h2 className="text-2xl font-bold">{project.title}</h2>
           <button
             size="icon"
-            variant="ghost"
             type="button"
-            onclick={() => setIsModalOpen((prev) => !prev)}
+            onClick={() => setIsModalOpen((prev) => !prev)}
           >
             <XIcon className="w-6 h-6" />
             <span className="sr-only">Close</span>
@@ -138,5 +137,6 @@ WorkModal.propTypes = {
     code: PropTypes.string,
     demoLive: PropTypes.string,
   }).isRequired,
+  setIsModalOpen: PropTypes.func.isRequired,
 };
 export default WorkModal;
