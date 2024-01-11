@@ -63,7 +63,7 @@ const WorkItem = (props) => {
           </div>
           <div className="flex justify-center gap-3">
             <span className="block bg-black rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none group-[hover]:text-yellow-100 flex items-center">
-              <Link type="button" to={project.liveCode} target="_blank">
+              <Link type="button" to={project.demoLive} target="_blank">
                 Live Demo
               </Link>
             </span>
@@ -91,7 +91,7 @@ WorkItem.propTypes = {
         name: PropTypes.string,
         color: PropTypes.string,
       })),
-      liveCode: PropTypes.string,
+      demoLive: PropTypes.string,
       code: PropTypes.string,
     },
   ).isRequired,

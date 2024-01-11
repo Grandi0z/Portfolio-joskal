@@ -18,6 +18,10 @@ const router = createBrowserRouter([
         element: <MainPage />,
       },
       {
+        path: '/Portfolio-joskal',
+        element: <MainPage />,
+      },
+      {
         path: '/technologies',
         element: <Technologies />,
       },
