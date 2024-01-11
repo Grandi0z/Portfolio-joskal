@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Portfolio-joskal/static/css/main.1602cc0c.css",
+    "main.js": "/Portfolio-joskal/static/js/main.a8c9d47a.js",
+    "static/media/bootstrap-icons.woff?": "/Portfolio-joskal/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/Portfolio-joskal/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/Portfolio-joskal/index.html",
+    "main.1602cc0c.css.map": "/Portfolio-joskal/static/css/main.1602cc0c.css.map",
+    "main.a8c9d47a.js.map": "/Portfolio-joskal/static/js/main.a8c9d47a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1602cc0c.css",
+    "static/js/main.a8c9d47a.js"
+  ]
+}
