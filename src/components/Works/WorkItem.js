@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import UsedTechs from '../UsedTechs/UsedTechs';
 import WorkModal from './WorkModal';
+import { MyModal } from '../../tools/tools';
 
 const WorkItem = (props) => {
   const { project } = props;
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(MyModal.setIsModalOpen);
+
   return (
     <button
       className="flex-shrink-0 m-6 relative overflow-hidden bg-object rounded-lg max-w-full xs:max-w-xs h-96 w-50 shadow-lg group"
@@ -76,7 +78,7 @@ const WorkItem = (props) => {
         </div>
       </div>
       <div className={isModalOpen ? 'showWorkModal' : 'hidden'}>
-        <WorkModal project={project} setIsModalOpen={setIsModalOpen} />
+        <WorkModal project={project} />
       </div>
     </button>
   );
