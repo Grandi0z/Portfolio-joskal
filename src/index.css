@@ -18,7 +18,7 @@
   }
 
   h1 {
-    @apply text-5xl text-center text-gray-300 font-bold;
+    @apply xs:text-8xl md:text-8xl text-center text-gray-300 font-bold md:w-[40rem];
   }
 
   h2 {
@@ -36,5 +36,15 @@
   .bg-object {
     @apply bg-gradient-to-r from-cyan-500 to-blue-500
       hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500;
+  }
+  .contact_me{
+    @apply w-fit border-0 m-auto bg-blue-800/30 shadow-sm shadow-blue-900/10 hover:shadow-lg hover:bg-blue-700
+    hover:shadow-lime-500/50 text-white py-2 px-4 rounded
+    dark:bg-blue-800/30 dark:shadow-sm dark:shadow-cyan-500/10 dark:hover:bg-blue-700
+    dark:hover:shadow-cyan-500/50
+  }
+
+  .stage-cube-cont {
+    @apply absolute left-[263px] top-[83px] w-[59%] h-[59%] block;
   }
 }
