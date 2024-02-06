@@ -63,7 +63,7 @@ const Home = () => {
         </div>
       </li>
       </ul>
-      <div className='flex stage-cube-cont side-by-side sm:block md:relative'>
+      <div className='flex stage-cube-cont side-by-side'>
                   <div className='cubespinner'>
                       <div className='face1'>
                           <FontAwesomeIcon icon={faWindows} color="#5366FF"/>

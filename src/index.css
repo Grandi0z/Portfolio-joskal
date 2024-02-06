@@ -45,6 +45,6 @@
   }
 
   .stage-cube-cont {
-    @apply absolute left-[263px] top-[83px] w-[59%] h-[59%] block;
+    @apply xls:absolute xls:top-[131px] xls:left-[69px] xls:opacity-10 m-auto sm:absolute sm:left-[263px] sm:opacity-100 sm:top-[83px] sm:w-[59%] sm:h-[59%] block md:static;
   }
 }
