@@ -10,7 +10,7 @@
   }
 
   .full-container {
-    @apply min-h-full min-w-full bg-transparent;
+    @apply h-screen min-w-full bg-transparent;
   }
 
   section {
@@ -45,6 +45,6 @@
   }
 
   .stage-cube-cont {
-    @apply xls:absolute xls:top-[131px] xls:left-[69px] xls:opacity-10 m-auto sm:absolute sm:left-[263px] sm:opacity-100 sm:top-[83px] sm:w-[59%] sm:h-[59%] block md:static;
+    @apply hidden xls:flex xls:absolute xls:top-[131px] xls:left-[69px] xls:opacity-10 m-auto sm:absolute sm:left-[263px] sm:opacity-100 sm:top-[83px] sm:w-[59%] sm:h-[59%] md:static;
   }
 }

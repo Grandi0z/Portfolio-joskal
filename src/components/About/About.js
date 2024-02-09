@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { aboutInfo } from '../../tools/tools';
+import { aboutInfo } from '../../tools/features';
 import ContactMe from './ContactMe';
 
 const About = () => (

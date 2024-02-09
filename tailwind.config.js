@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       screens: {
         'xs': '268px',
-        'xls': '340px'
+        'xls': '300px'
       },
       display: {
         math: 'math',

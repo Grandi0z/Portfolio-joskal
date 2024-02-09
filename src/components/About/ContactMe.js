@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MyModal, aboutInfo, XIcon } from '../../tools/tools';
+import { MyModal, aboutInfo, XIcon } from '../../tools/features';
 
 const ContactMe = () => {
   const [isModalOpen, setIsModalOpen] = useState(MyModal.setIsModalOpen);

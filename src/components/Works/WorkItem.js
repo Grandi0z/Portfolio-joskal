@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import UsedTechs from '../UsedTechs/UsedTechs';
 import WorkModal from './WorkModal';
-import { MyModal } from '../../tools/tools';
+import { MyModal } from '../../tools/features';
 
 const WorkItem = (props) => {
   const { project } = props;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import UsedTechs from '../UsedTechs/UsedTechs';
-import { MyModal, XIcon } from '../../tools/tools';
+import { MyModal, XIcon } from '../../tools/features';
 
 const WorkModal = (props) => {
   const { project } = props;
