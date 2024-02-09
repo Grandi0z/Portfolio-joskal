@@ -1,3 +1,4 @@
+@import "animate.css";
 .main-container {
   background: url(https://res.cloudinary.com/dhko6cdgf/image/upload/v1704894432/josephIo/Images/background/stars-3750824_fpotsm.png) no-repeat fixed;
   background-size: cover;
@@ -36,16 +37,6 @@
   background: #555;
 }
 
-.full-container {
-  height: 100vh;
-}
-
-.section-technologies {
-  background:
-    url(https://res.cloudinary.com/dhko6cdgf/image/upload/v1704552054/josephIo/Images/Decoration/Desktop/rorazu3dmq1c1qnzrlwa.png) 0% 100% no-repeat,
-              url(https://res.cloudinary.com/dhko6cdgf/image/upload/v1704552052/josephIo/Images/Decoration/Desktop/rszgf9fmxizuj2pahcrc.svg) 100% 0% no-repeat;
-  background-size: 20%;
-}
 
 .section-works {
   background:
