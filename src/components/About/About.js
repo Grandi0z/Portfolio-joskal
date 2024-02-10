@@ -46,7 +46,7 @@ const About = () => {
                     aria-label="Open modal"
                     rel="noreferrer"
                   >
-                    Contact Me
+                    Get in touch
                   </Link>
                 </div>
               </div>
