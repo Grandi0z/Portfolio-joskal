@@ -15,6 +15,8 @@ import vscode from '../assets/images/vscode-insiders-svgrepo-com.svg'
 import mysql from '../assets/images/mysql-svgrepo-com (1).svg'
 import postgresql from '../assets/images/postgresql-svgrepo-com.svg'
 import jest from '../assets/images/jest-svgrepo-com.svg'
+import msoffice from '../assets/images/microsoftoffice-svgrepo-com.svg'
+import rspec from '../assets/images/rspec-svgrepo-com.svg'
 
 export class MyModal {
     static setIsModalOpen = false
@@ -92,36 +94,10 @@ export const technologies = {
       },
       {
         name: 'JavaScript',
-        photo: {svg: javascript, filter: 'filter-js', color:'#494F82' },
+        photo: {svg: javascript, filter: 'filter-js', color:'#e0dd07' },
       },
     ],
     backEnd: [
-      {
-        name: 'Ruby',
-        photo: {svg: ruby, filter: 'filter-ruby', color:'#E02F07' },
-      },
-      {
-        name: 'PHP',
-        photo: {svg: php, filter: 'filter-php', color: '#778EC9' },
-      },
-      {
-        name: 'SQL',
-        photo: {svg: sql, filter: 'filter-sql', color: '#F0D362' },
-      },
-      {
-        name: 'Mysql',
-        photo: {svg: mysql, filter: 'filter-mysql', color: 'FF0000' },
-      },
-      {
-        name: 'Postgresql',
-        photo: {svg: postgresql, filter: 'filter-postgresql', color: 'FF0000' },
-      },
-
-
-    ],
-  },
-  frameWorks: {
-    fontEnd: [
       {
         name: 'Sass',
         photo: {svg: sass, filter: 'filter-sass', color: '#A32A91' },
@@ -135,8 +111,40 @@ export const technologies = {
         photo: {svg: tailwind, filter: 'filter-tailwind', color: '#29f2f2' },
       },
       {
+        name: 'Rials',
+        photo: {svg: rails, filter: 'filter-rails', color: '#FF0000' },
+      },
+      {
+        name: 'Mysql',
+        photo: {svg: mysql, filter: 'filter-mysql', color: '#7d9df0' },
+      },
+      {
+        name: 'Postgresql',
+        photo: {svg: postgresql, filter: 'filter-react', color: '#4f589c' },
+      },
+      {
+        name: 'Ms-Office',
+        photo: {svg: msoffice, filter: 'filter-office', color: '#c74c1c' },
+        },
+    ],
+  },
+  frameWorks: {
+    fontEnd: [
+      {
+        name: 'Ruby',
+        photo: {svg: ruby, filter: 'filter-ruby', color:'#E02F07' },
+      },
+      {
+        name: 'PHP',
+        photo: {svg: php, filter: 'filter-php', color: '#522e6b' },
+      },
+      {
+        name: 'SQL',
+        photo: {svg: sql, filter: 'filter-sql', color: '#F0D362' },
+      },
+      {
         name: 'React',
-        photo: {svg: react, filter: 'filter-react', color: '#47DEBD' },
+        photo: {svg: react, filter: 'filter-react', color: '#3e04bd' },
       },
       {
         name: 'Redux',
@@ -145,22 +153,21 @@ export const technologies = {
     ],
     backEnd: [
       {
-        name: 'Rials',
-        photo: {svg: rails, filter: 'filter-rails', color: 'FF0000' },
+        name: 'Jest',
+        photo: {svg: jest, filter: 'filter-jest', color: '#570D18' },
       },
       {
-        name: 'VSCode',
-        photo: {svg: vscode, filter: 'filter-rails', color: 'FF0000' },
+        name: 'Rspec',
+        photo: {svg: rspec , filter: 'filter-rspec', color: '#a30870' },
       },
       {
         name: 'Git',
-        photo: {svg: git, filter: 'filter-rails', color: 'FF0000' },
+        photo: {svg: git, filter: 'filter-git', color: '#FF0000' },
       },
       {
-        name: 'Jest',
-        photo: {svg: jest, filter: 'filter-jest', color: 'FF0000' },
+        name: 'VSCode',
+        photo: {svg: vscode, filter: 'filter-rails', color: '#e0dd07' },
       },
-    
     ],
   },
 };

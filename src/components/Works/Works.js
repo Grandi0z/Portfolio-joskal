@@ -3,6 +3,8 @@ import { v4 as uuidv4 } from 'uuid';
 import WorkItem from './WorkItem';
 import { projects } from '../../tools/features';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
+import './works.scss'
+
 const Works = () => {
  
   const content = (
