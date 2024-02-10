@@ -9,8 +9,8 @@ const Technologies = () => {
   
   const content = (
       <>
-        <div className="container px-5 py-5 mx-auto">
-          <ul className="flex flex-wrap -m-4 text-center justify-center gap-2 xs:justify-start">
+        <div className="container m-auto">
+          <ul className="flex flex-wrap gap-2 justify-center">
             {technologies.languages.fontEnd.map((technology) => (
               <li key={uuidv4()} className="w-full xs:w-1/2 sm:w-1/3 md:w-1/4">
                 <TechnologyItem technology={technology} />
@@ -23,8 +23,8 @@ const Technologies = () => {
             ))}
           </ul>
         </div>
-        <div className="container px-5 py-5 mx-auto">
-          <ul className="flex flex-wrap -m-4 text-center justify-center gap-2 xs:justify-start">
+        <div className="container m-auto">
+          <ul className="flex flex-wrap gap-2 justify-center">
             {technologies.frameWorks.fontEnd.map((technology) => (
               <li key={uuidv4()} className="w-full xs:w-1/2 sm:w-1/3 md:w-1/4">
                 <TechnologyItem technology={technology} />
@@ -50,7 +50,7 @@ const Technologies = () => {
       
 
       </h2>
-      <div className="grid grid-cols-2 ul-works">
+      <div className="flex tech-list m-auto py-8">
         {content}
       </div>
     </section>

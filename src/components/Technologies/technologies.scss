@@ -7,8 +7,16 @@
               url(https://res.cloudinary.com/dhko6cdgf/image/upload/v1704552052/josephIo/Images/Decoration/Desktop/rszgf9fmxizuj2pahcrc.svg) 100% 0% no-repeat;
     background-size: 20%;
 
+ .tech-list {
+    height: 75vh;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: rgb(2, 55, 115, 0.1);
+    border-radius: 0.2rem;
+ }
+
 .filter-white {
-    filter: invert(10%) sepia(100%) saturate(1%) hue-rotate(273deg) brightness(100%) contrast(1500%)
+    filter:invert(0%) sepia(0%) saturate(1%) hue-rotate(354deg) brightness(10%) contrast(1500%)
 }
 
 .filter-tailwind {
@@ -44,7 +52,11 @@
 }
 
 .filter-rails {
-    filter: invert(15%) sepia(93%) saturate(7176%) hue-rotate(5deg) brightness(103%) contrast(118%) drop-shadow(3px 3px 15px #ff0000);
+    filter: invert(15%) sepia(93%) saturate(7176%) hue-rotate(5deg) brightness(103%) contrast(118%) drop-shadow(3px 3px 20px #ff0000);
+}
+
+.filter-git {
+    filter: invert(15%) sepia(93%) saturate(7176%) hue-rotate(5deg) brightness(103%) contrast(118%) drop-shadow(3px 3px 20px #ff0000);
 }
 
 .filter-sql {
@@ -56,7 +68,7 @@
 }
 
 .filter-react {
-    filter: invert(18%) sepia(100%) saturate(7422%) hue-rotate(242deg) brightness(80%) contrast(137%) drop-shadow(3px 3px 15px #47DEBD);
+    filter: invert(18%) sepia(100%) saturate(7422%) hue-rotate(242deg) brightness(80%) contrast(137%) drop-shadow(3px 3px 15px #3e04bd);
 }
 
 .filter-redux {
@@ -65,14 +77,17 @@
 
 
 .filter-mysql {
-    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%) drop-shadow(3px 3px 15px #7645d9);;
+    filter: invert(36%) sepia(9%) saturate(3426%) hue-rotate(196deg) brightness(91%) contrast(86%) drop-shadow(3px 3px 15px #4f589c);
 }
 
-.filter-postgres {
-    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%) drop-shadow(3px 3px 15px #7645d9);;
+.filter-office {
+    filter: invert(26%) sepia(89%) saturate(1417%) hue-rotate(354deg) brightness(105%) contrast(86%) drop-shadow(3px 3px 15px #c74c1c);
 }
 
 .filter-jest {
-    filter: invert(9%) sepia(58%) saturate(4169%) hue-rotate(337deg) brightness(77%) contrast(98%) drop-shadow(3px 3px 15px #570D18);; 
+    filter: invert(9%) sepia(58%) saturate(4169%) hue-rotate(337deg) brightness(77%) contrast(98%) drop-shadow(3px 3px 15px #570D18);
+}
+.filter-rspec {
+    filter: invert(14%) sepia(46%) saturate(7045%) hue-rotate(308deg) brightness(87%) contrast(103%) drop-shadow(3px 3px 15px #a30870);
 }
 }

@@ -6,6 +6,16 @@ import './technologies.scss';
 const TechnologyItem = (props) => {
   const { technology } = props;
   const [isHovered, setIsHovered] = useState(false);
+
+  const color = technology.photo.color;
+
+  const styles = {
+    h3: {
+      color: isHovered ? '#fff' : '#000',
+      textShadow: isHovered ? `3px 0px 7px ${color}, -3px 0px 7px ${color}, 0px 4px 7px ${color}` : 'none',
+      fontWeight: isHovered ? 'bold' : 'normal'
+    }
+  };
   return (
     <div className="w-fit md:w-1/4 sm:w-1/2">
       <div className="border-2 p-0.5 flex flex-col justify-center items-center
@@ -22,7 +32,11 @@ const TechnologyItem = (props) => {
           className={`filter-white h-16 w-16 m-auto ${isHovered ? technology.photo.filter : ''} `}
         />
         </div>
-        <h3 className={`title-font font-medium text-xl h-1/4 ${isHovered ? `font-bold text-[${technology.photo.color}]` : 'text-white'}`}>{technology.name}</h3>
+
+        <h3 className='title-font font-medium text-xl h-1/4' style={styles.h3}>
+          {technology.name}
+        </h3>
+
       </div>
     </div>
   );
@@ -31,7 +45,7 @@ const TechnologyItem = (props) => {
 TechnologyItem.propTypes = {
   technology: PropTypes.shape(
     {
-      photo: PropTypes.string,
+      photo: PropTypes.shape({}),
       name: PropTypes.string,
     },
   ).isRequired,

@@ -4,6 +4,7 @@ import Home from './Home/Home';
 import Technologies from './Technologies/Technologies';
 import Works from './Works/Works';
 import About from './About/About';
+import NavBarMobile from './NavBarMobile'
 
 const MainPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,6 +36,9 @@ const MainPage = () => {
     ) : (
     <div className="flex flex-col main-container">
       <div className="bg-blue-500/20">
+      <div className="md:hidden">
+        <NavBarMobile />
+      </div>
         <Home />
         <div id="technologies"><Technologies /></div>
         <div id="works"><Works /></div>
