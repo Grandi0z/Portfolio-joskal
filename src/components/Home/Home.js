@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import NavBarMobile from '../NavBarMobile';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faGitAlt, faHtml5, faJsSquare, faReact, faWindows } from '@fortawesome/free-brands-svg-icons'
 import './home.scss'
@@ -23,9 +22,6 @@ const Home = () => {
 
   return(
     <div className="section-main full-container">
-      <div className="md:hidden">
-        <NavBarMobile />
-      </div>
       <div className='flex w-screen sm:items-center xs:p-3 md:p-0'>
         <ul className="font-bold text-center xs:w-100% home-list">
         <li>

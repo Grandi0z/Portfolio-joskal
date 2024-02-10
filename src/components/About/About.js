@@ -1,14 +1,17 @@
 // About.js
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { aboutInfo } from '../../tools/features';
 import ContactMe from './ContactMe';
+import { MyModal } from '../../tools/features';
 
-const About = () => (
-  <section className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 section-about border-r-2">
+const About = () => {
+  const [isModalOpen, setIsModalOpen] = useState(MyModal.setIsModalOpen);
+  return(
+   <section className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 section-about border-r-2">
     <div className="bg-black/60">
       <div className="container mx-auto py-8">
         <div className="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
@@ -25,7 +28,6 @@ const About = () => (
                 </h1>
                 <p className="text-gray-400">FullStack Developer</p>
                 <div className="mt-6 flex flex-wrap gap-4 justify-center">
-                 <ContactMe />
                   <a
                     href={aboutInfo.bioInfo.contactInfo.resume}
                     target="_blank"
@@ -37,6 +39,15 @@ const About = () => (
                   >
                     Resume
                   </a>
+                  <Link
+                    className='contact_me'
+                    onClick={() => setIsModalOpen((prev) => !prev)}
+                    type="button"
+                    aria-label="Open modal"
+                    rel="noreferrer"
+                  >
+                    Contact Me
+                  </Link>
                 </div>
               </div>
               <hr className="my-6 border-t border-gray-300" />
@@ -200,8 +211,12 @@ const About = () => (
         </div>
       </div>
     </div>
+    <div className={isModalOpen ? 'showWorkModal' : 'hidden'}>
+        <ContactMe />
+      </div>
   </section>
-);
+ );
+}
 
 const mapStateToProps = (state) => ({
   aboutInfo: state.aboutInfo,
