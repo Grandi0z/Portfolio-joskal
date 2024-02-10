@@ -8,15 +8,6 @@
   color: #fff;
 }
 
-.ul-works {
-  height: 75vh;
-  overflow: hidden;
-  overflow-y: auto;
-  background-color: rgb(2, 55, 115, 0.1);
-  padding: 1.5rem 0.8rem;
-  border-radius: 0.2rem;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -35,14 +26,6 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-
-.section-works {
-  background:
-    url(https://res.cloudinary.com/dhko6cdgf/image/upload/v1704552051/josephIo/Images/Decoration/Desktop/d3vfrzhxre3sawpm0z2k.svg) 0% 110% no-repeat,
-  url(https://res.cloudinary.com/dhko6cdgf/image/upload/v1704556807/josephIo/Images/Decoration/Desktop/kttadlef6o87r9lcyr0k.png) 50% 50% no-repeat,
-  url(https://res.cloudinary.com/dhko6cdgf/image/upload/v1704552054/josephIo/Images/Decoration/Desktop/mpsnvpigqmelwpkmht5r.svg) 68% 75% no-repeat;
 }
 
 .section-about {
