@@ -1,15 +1,36 @@
 {
   "files": {
-    "main.css": "/Portfolio-joskal/static/css/main.85d4181d.css",
-    "main.js": "/Portfolio-joskal/static/js/main.d165cd64.js",
+    "main.css": "/Portfolio-joskal/static/css/main.cbda655e.css",
+    "main.js": "/Portfolio-joskal/static/js/main.60d5cfac.js",
+    "static/media/stars-3750824_fpotsm.png": "/Portfolio-joskal/static/media/stars-3750824_fpotsm.5ac9f32a3b37658d0831.png",
     "static/media/bootstrap-icons.woff?": "/Portfolio-joskal/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/Portfolio-joskal/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/profiles.jpg": "/Portfolio-joskal/static/media/profiles.2a81f35bb557dd1635ee.jpg",
+    "static/media/react-svgrepo-com.svg": "/Portfolio-joskal/static/media/react-svgrepo-com.598d90dd4f36234e376cbc6ccd571550.svg",
+    "static/media/postgresql-svgrepo-com.svg": "/Portfolio-joskal/static/media/postgresql-svgrepo-com.316f6faf7de32d45c96e76e7aac36c4f.svg",
+    "static/media/sass-svgrepo-com.svg": "/Portfolio-joskal/static/media/sass-svgrepo-com.40638f12eeee7f541699301b1609f2c2.svg",
+    "static/media/mysql-svgrepo-com (1).svg": "/Portfolio-joskal/static/media/mysql-svgrepo-com (1).a9a13081a50faa8b9ae88c6cc225bd63.svg",
+    "static/media/ruby-svgrepo-com (2).svg": "/Portfolio-joskal/static/media/ruby-svgrepo-com (2).7e1a22119da732536f9f5e5188e3bacd.svg",
+    "static/media/rspec-svgrepo-com.svg": "/Portfolio-joskal/static/media/rspec-svgrepo-com.194b6818c8d476157c4f1eabd66db3ab.svg",
+    "static/media/jest-svgrepo-com.svg": "/Portfolio-joskal/static/media/jest-svgrepo-com.ef3ad6605ddbf0539c9f6a9a3335fbbe.svg",
+    "static/media/redux-fill-svgrepo-com.svg": "/Portfolio-joskal/static/media/redux-fill-svgrepo-com.48809f34947cb1cb2a9dc2f083c97071.svg",
+    "static/media/html5-svgrepo-com.svg": "/Portfolio-joskal/static/media/html5-svgrepo-com.8a788805588f48bff8e05431b4d48134.svg",
+    "static/media/git-icon-svgrepo-com.svg": "/Portfolio-joskal/static/media/git-icon-svgrepo-com.9a295898f0d910a672095bfef91185d2.svg",
+    "static/media/rails-svgrepo-com.svg": "/Portfolio-joskal/static/media/rails-svgrepo-com.42f5d1762a75465d424b3126dd233123.svg",
+    "static/media/bootstrap-fill-svgrepo-com.svg": "/Portfolio-joskal/static/media/bootstrap-fill-svgrepo-com.e67db8d1598460afbd92e9eebc33dc13.svg",
+    "static/media/microsoftoffice-svgrepo-com.svg": "/Portfolio-joskal/static/media/microsoftoffice-svgrepo-com.46926f46b0f5ce39a0b4c704ef72f7bf.svg",
+    "static/media/javascript-1-svgrepo-com.svg": "/Portfolio-joskal/static/media/javascript-1-svgrepo-com.7e775c9fb7be7f18494339feb417611d.svg",
+    "static/media/vscode-insiders-svgrepo-com.svg": "/Portfolio-joskal/static/media/vscode-insiders-svgrepo-com.7cb96e1af52b15a943f3506753346a62.svg",
     "index.html": "/Portfolio-joskal/index.html",
-    "main.85d4181d.css.map": "/Portfolio-joskal/static/css/main.85d4181d.css.map",
-    "main.d165cd64.js.map": "/Portfolio-joskal/static/js/main.d165cd64.js.map"
+    "static/media/database-svgrepo-com.svg": "/Portfolio-joskal/static/media/database-svgrepo-com.1d22f36447c3b52650dccf71dc204538.svg",
+    "static/media/css3-svgrepo-com (2).svg": "/Portfolio-joskal/static/media/css3-svgrepo-com (2).a825541baf0f3f59609266f1494e7b25.svg",
+    "static/media/tailwind.svg": "/Portfolio-joskal/static/media/tailwind.e2591a481d3e5a70b928da34f8805055.svg",
+    "static/media/php-elephant-svgrepo-com.svg": "/Portfolio-joskal/static/media/php-elephant-svgrepo-com.9b8654ac320e4a52da4f6137d2390230.svg",
+    "main.cbda655e.css.map": "/Portfolio-joskal/static/css/main.cbda655e.css.map",
+    "main.60d5cfac.js.map": "/Portfolio-joskal/static/js/main.60d5cfac.js.map"
   },
   "entrypoints": [
-    "static/css/main.85d4181d.css",
-    "static/js/main.d165cd64.js"
+    "static/css/main.cbda655e.css",
+    "static/js/main.60d5cfac.js"
   ]
 }
