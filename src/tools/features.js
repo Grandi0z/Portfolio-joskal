@@ -36,14 +36,37 @@ export const aboutInfo = {
   bioInfo: {
     name: 'Joseph Lwanzo Kausi',
     intro:
-        "Hello, my name is Joseph! I'm a motivated software developer working in Goma.",
+        "Hello! I'm Joseph, a passionate software developer based in Goma",
     studyInfo:
-        "I'm currently working on my website, where you'll find everything I want to show the world. I did 3 years of university studies in computer science, which I supplemented with distance learning at a very selective school where I spent months working remotely with talented developers from different continents.",
-    experienceInfo:
-        'Take a look at the projects page for an overview of my work on open source software.',
+        `
+        My journey began with 3 years of computer science studies, 
+        then propelled me into remote learning with talented developers worldwide. 
+        This experience ignited my love for collaboration and knowledge sharing.
+        `,
+    experienceInfo: [
+      `
+      I specialize in crafting front-end (HTML/CSS, React, React-Native) and back-end (Ruby, PHP, Rails, SQL) experiences
+      `, 
+      `Fluent in testing practices (TDD - RSpec/Jest) and development tools (Git, GitHub, Webpack, Postman, VScode).
+      `, 
+      `
+      Adept at Agile methodologies and remote collaboration, fostering teamwork and leadership within projects.`],
+    beyondCode: [
+      `I bridge the gap between technical complexity and clear communication through effective technical writing.`,
+      `My passion for mentoring fuels my desire to guide and empower others in their learning journeys.`,
+      `I actively contributed to 20+ projects, showcasing my problem-solving skills and adaptability.`
+    ],
+    divers: [
+      `When I'm not coding, you'll find me immersed in books, writing, or exploring the world of audiobooks.
+      My thirst for knowledge and innovation leads me to constantly seek new ways to expand my skillset.`,
+    ],
     contributionInfo:
-        "I'm active on my social media, or by email, so if you want to get in touch, don't hesitate, it's always a pleasure to meet new people.",
-    skillsInfo: 'skills infos',
+        `Ready to leverage my skills and collaborative spirit? Reach out and let's 
+        discuss how we can achieve success together.`,
+    skillsInfo: 
+    `
+    Connect with me on social media or email - I'm always happy to meet new people and share ideas!
+    `,
     contactInfo: {
       facebook: 'https://fr-fr.facebook.com/joseph.khausilj/',
       instagram: 'https://www.instagram.com/joseph_l_khausi/',
@@ -313,3 +336,5 @@ export const projects = [
     technologies: [{ name: 'HTML', color: '#202891' }, { name: 'JavaScript', color: '#d6cd1a' }, { name: 'CSS', color: '#d17d08' }],
   },
 ];
+
+export let modalState = false;

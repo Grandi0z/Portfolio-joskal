@@ -15,7 +15,7 @@ const WorkModal = (props) => {
           <button
             size="icon"
             type="button"
-            onClick={() => { setIsModalOpen((prev) => !prev); return isModalOpen; }}
+            // onClick={() => { setIsModalOpen((prev) => !prev); return isModalOpen; }}
           >
             <XIcon className="w-6 h-6" />
             <span className="sr-only">Close</span>
