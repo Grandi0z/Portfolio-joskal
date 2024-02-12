@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faGitAlt, faHtml5, faJsSquare, faReact, faWindows } from '@fortawesome/free-brands-svg-icons'
 import './home.scss'
 import animateTitle from '../../tools/tools';
+import { modalState } from '../../tools/features';
+import ContactMe from '../About/ContactMe';
+
 
 
 const Home = () => {
@@ -19,6 +22,12 @@ const Home = () => {
       animateTitle('h-animate');
   }, 60 * 1000);
   }, [])
+
+  const [isModalOpen, setIsModalOpen] = useState(modalState);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return(
     <div className="section-main full-container">
@@ -107,9 +116,16 @@ const Home = () => {
         <p>
           Take a look at some of my work and experiences. If you like what
           you see and have a project that&apos;s just waiting to become reality, don&apos;t
-          hesitate to <span className="block contact_me">contact me!</span> 
+          hesitate to 
+          <button 
+            className="block contact_me"
+            onClick={() => setIsModalOpen((prev) => !prev)}
+          >contact me!</button> 
         </p>
       </div>
+      <div className={isModalOpen ? 'showWorkModal' : 'hidden'}>
+      <ContactMe closeModal={closeModal} />
+    </div>
     </div>
   )
 };
