@@ -1,6 +1,6 @@
 @import "animate.css";
 .main-container {
-  background: url(https://res.cloudinary.com/dhko6cdgf/image/upload/v1704894432/josephIo/Images/background/stars-3750824_fpotsm.png) no-repeat fixed;
+  background: url(./assets/images/bg/stars-3750824_fpotsm.png) no-repeat fixed;
   background-size: cover;
 }
 
@@ -26,10 +26,6 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-.section-about {
-  background: url(https://res.cloudinary.com/dhko6cdgf/image/upload/v1704552059/josephIo/Images/Decoration/Desktop/ouofvpzrpyh4tdw1i8xs.png);
 }
 
 .hideMenuNav {

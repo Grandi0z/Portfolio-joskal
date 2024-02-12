@@ -2,14 +2,23 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 import { connect } from 'react-redux';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { aboutInfo } from '../../tools/features';
 import ContactMe from './ContactMe';
-import { MyModal } from '../../tools/features';
+import { modalState } from '../../tools/features';
+import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
+import './about.scss'
 
 const About = () => {
-  const [isModalOpen, setIsModalOpen] = useState(MyModal.setIsModalOpen);
+
+  const [isModalOpen, setIsModalOpen] = useState(modalState);
+  
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return(
    <section className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 section-about border-r-2">
     <div className="bg-black/60">
@@ -31,7 +40,7 @@ const About = () => {
                   <a
                     href={aboutInfo.bioInfo.contactInfo.resume}
                     target="_blank"
-                    className="bg-green-500 shadow-lg shadow-green-500/50 hover:bg-green-600
+                    className="bg-green-700 shadow-lg shadow-green-500/50 hover:bg-green-500/80
                       hover:shadow-lime-500/50 text-white py-2 px-4 rounded
                       dark:bg-green-500 dark:shadow-lg dark:shadow-green-500/50 dark:hover:bg-green-600
                       dark:hover:shadow-lime-500/50"
@@ -40,7 +49,7 @@ const About = () => {
                     Resume
                   </a>
                   <Link
-                    className='contact_me'
+                    className='contact_me bg-blue-800/80 shadow-lime-500/10'
                     onClick={() => setIsModalOpen((prev) => !prev)}
                     type="button"
                     aria-label="Open modal"
@@ -92,12 +101,42 @@ const About = () => {
           </div>
           <div className="col-span-4 sm:col-span-9">
             <div className="bg-black shadow rounded-lg p-6">
-              <h2>About Me</h2>
+              <h2>
+                <AnimatedLetters 
+                    letters={['A', 'b','o','u','t',' ','m','e']}
+                    animation={'pulse'}
+                />
+              </h2>
               <div className="text-gray-300">
                 <p>{aboutInfo.bioInfo.intro}</p>
                 <p>{aboutInfo.bioInfo.studyInfo}</p>
-                <p>{aboutInfo.bioInfo.experienceInfo}</p>
+                <div>
+                  <h4>Full-Stack Expertise:</h4>
+                  <ul className='info-list'>
+                    {aboutInfo.bioInfo.experienceInfo.map(element => {
+                      return (<li key={uuidv4()}>{element}</li>)
+                    }) }
+                  </ul>
+                </div>
+                <div>
+                  <h4>Beyond the Code:</h4>
+                  <ul className='info-list'>
+                    {aboutInfo.bioInfo.beyondCode.map(element => {
+                      return (<li key={uuidv4()}>{element}</li>)
+                    }) }
+                  </ul>
+                </div>
+                <div>
+                  <h4>Driven by Curiosity:</h4>
+                  <ul className='info-no-list'>
+                    {aboutInfo.bioInfo.divers.map(element => {
+                      return (<li key={uuidv4()}>{element}</li>)
+                    }) }
+                  </ul>
+                </div>
+                <br/>
                 <p>{aboutInfo.bioInfo.contributionInfo}</p>
+                <br/>
                 <p>{aboutInfo.bioInfo.skillsInfo}</p>
               </div>
               <h3 className="font-semibold text-center mt-3 -mb-2">
@@ -212,8 +251,8 @@ const About = () => {
       </div>
     </div>
     <div className={isModalOpen ? 'showWorkModal' : 'hidden'}>
-        <ContactMe />
-      </div>
+      <ContactMe closeModal={closeModal} />
+    </div>
   </section>
  );
 }
