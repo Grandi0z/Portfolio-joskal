@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Root from './root/Root';
 import MainPage from './components/MainPage';
@@ -15,6 +15,10 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        element: <MainPage />,
+      },
+      {
+        path: '/Portfolio-joskal',
         element: <MainPage />,
       },
       {

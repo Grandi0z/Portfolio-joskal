@@ -1,0 +1,16 @@
+.section-about {
+  background: url(https://res.cloudinary.com/dhko6cdgf/image/upload/v1704552059/josephIo/Images/Decoration/Desktop/ouofvpzrpyh4tdw1i8xs.png) 30% 70%;
+  animation: fadeInUp 2s 2s;
+  animation-fill-mode: forwards;
+  clear: both;
+
+  .info-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+
+  .info-no-list {
+    list-style-type: none;
+    padding-left: 1.5rem;
+  }
+}

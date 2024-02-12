@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import UsedTechs from '../UsedTechs/UsedTechs';
+import { XIcon } from '../../tools/features';
 
 const WorkModal = (props) => {
   const { project } = props;
+  // const [isModalOpen, setIsModalOpen] = useState(MyModal.setIsModalOpen);
   return (
     <div className="flex items-center justify-center min-h-screen p-4 bg-gray-800 bg-opacity-50">
       <div className="w-full max-w-2xl bg-white rounded-lg shadow-md overflow-hidden mx-2 md:mx-0 dark:bg-gray-900">
@@ -12,9 +14,8 @@ const WorkModal = (props) => {
           <h2 className="text-2xl font-bold">{project.title}</h2>
           <button
             size="icon"
-            variant="ghost"
             type="button"
-            onclick={() => setIsModalOpen((prev) => !prev)}
+            // onClick={() => { setIsModalOpen((prev) => !prev); return isModalOpen; }}
           >
             <XIcon className="w-6 h-6" />
             <span className="sr-only">Close</span>
@@ -103,26 +104,6 @@ const GlobeIcon = (props) => (
     <circle cx="12" cy="12" r="10" />
     <line x1="2" x2="22" y1="12" y2="12" />
     <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-  </svg>
-);
-
-const XIcon = (props) => (
-  <svg
-  /* eslint-disable-next-line react/jsx-props-no-spreading */
-    {...props}
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="text-gray-400 hover:text-red-300 focus:animate-pulse"
-  >
-    <path d="M18 6 6 18" />
-    <path d="m6 6 12 12" />
   </svg>
 );
 

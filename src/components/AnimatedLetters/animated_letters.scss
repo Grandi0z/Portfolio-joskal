@@ -1,0 +1,25 @@
+.animated-letters-container {
+  display: inline-block;
+}
+
+.animated-letter {
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animated-letters-container:hover .animated-letter {
+  animation: pulse 1s infinite alternate;
+}

@@ -10,6 +10,10 @@ module.exports = {
     extend: {
       screens: {
         'xs': '268px',
+        'xls': '300px'
+      },
+      display: {
+        math: 'math',
       },
       animation: {
         'text-slide-2': 'text-slide-2 2s cubic-bezier(0.83, 0, 0.17, 1) 1',

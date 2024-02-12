@@ -21,8 +21,7 @@ const UsedTechs = (props) => {
 };
 
 UsedTechs.propTypes = {
-  techs: PropTypes.arrayOf( PropTypes.shape()
-  ).isRequired,
+  techs: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
 export default UsedTechs;

@@ -1,0 +1,85 @@
+.contact-form {
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      overflow: hidden;
+      opacity: 0;
+      animation: fadeInUp 1s 1s;
+      animation-fill-mode: forwards;
+      clear: both;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+  }
+
+  .flat-button {
+    color: #fff;
+    background: 0 0;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #115173;
+    float: right;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.79);
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  transition: transform 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.showWorkModal {
+  opacity: 1;
+  pointer-events: auto;
+}

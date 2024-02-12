@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import UsedTechs from '../UsedTechs/UsedTechs';
 import WorkModal from './WorkModal';
+import { MyModal } from '../../tools/features';
 
 const WorkItem = (props) => {
   const { project } = props;
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(MyModal.setIsModalOpen);
+
   return (
     <button
       className="flex-shrink-0 m-6 relative overflow-hidden bg-object rounded-lg max-w-full xs:max-w-xs h-96 w-50 shadow-lg group"
@@ -62,13 +64,23 @@ const WorkItem = (props) => {
             <UsedTechs techs={project.technologies} />
           </div>
           <div className="flex justify-center gap-3">
-            <span className="block bg-black rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none group-[hover]:text-yellow-100 flex items-center">
-              <Link type="button" to={project.liveCode} target="_blank">
+            <span className="block bg-black rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center transition duration-150 ease-in-out hover:orange-900 hover:bg-neutral-800 focus:bg-neutral-500 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)]">
+              <Link
+                type="button"
+                to={project.demoLive}
+                target="_blank"
+                className="uppercase"
+              >
                 Live Demo
               </Link>
             </span>
-            <span className="block bg-black rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none group-[hover]:text-yellow-100 flex items-center">
-              <Link type="button" to={project.code} target="_blank">
+            <span className="block bg-black rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center transition duration-150 ease-in-out hover:orange-900 hover:bg-neutral-800 focus:bg-neutral-500 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)]">
+              <Link
+                type="button"
+                to={project.code}
+                target="_blank"
+                className="uppercase"
+              >
                 Repository
               </Link>
             </span>
@@ -91,7 +103,7 @@ WorkItem.propTypes = {
         name: PropTypes.string,
         color: PropTypes.string,
       })),
-      liveCode: PropTypes.string,
+      demoLive: PropTypes.string,
       code: PropTypes.string,
     },
   ).isRequired,

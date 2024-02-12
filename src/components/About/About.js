@@ -1,40 +1,23 @@
 // About.js
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 import { connect } from 'react-redux';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { aboutInfo, modalState } from '../../tools/features';
+import ContactMe from './ContactMe';
+import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
+import profile from '../../assets/images/profile/profiles.jpg';
+import './about.scss';
 
 const About = () => {
-  const aboutInfo = {
-    profileImage: 'https://res.cloudinary.com/dhko6cdgf/image/upload/v1704546836/josephIo/Images/Profile/Picsart_22-11-28_13-42-04-893_j5u4hl.jpg',
-    bioInfo: {
-      name: 'Joseph Lwanzo Kausi',
-      intro:
-        "Hello, my name is Joseph! I'm a motivated software developer working in Goma.",
-      studyInfo:
-        "I'm currently working on my website, where you'll find everything I want to show the world. I did 3 years of university studies in computer science, which I supplemented with distance learning at a very selective school where I spent months working remotely with talented developers from different continents.",
-      experienceInfo:
-        'Take a look at the projects page for an overview of my work on open source software.',
-      contributionInfo:
-        "I'm active on my social media, or by email, so if you want to get in touch, don't hesitate, it's always a pleasure to meet new people.",
-      skillsInfo: 'skills infos',
-      contactInfo: {
-        facebook: 'https://fr-fr.facebook.com/joseph.khausilj/',
-        instagram: 'https://www.instagram.com/joseph_l_khausi/',
-        linkedin: 'linkedin.com/in/joskal',
-        twitter: 'https://twitter.com/Joseph_LSK',
-        medium: 'medium.com/@josephlkausi',
-        tiktok: 'tiktok.com/@grandioseh.fr',
-        github: 'github.com/Grandi0z',
-        email: 'josephlkausi@gmail.com',
-        resume: 'https://docs.google.com/document/d/10NTVw12Jqzel3yX_4unJrOhg0_kLIhjWLl-Xi3sZf4Q/edit?usp=sharing',
-      },
+  const [isModalOpen, setIsModalOpen] = useState(modalState);
 
-    },
-    location: 'Nord Kivu Goma',
-    website: 'hola.com',
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
+
   return (
     <section className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 section-about border-r-2">
       <div className="bg-black/60">
@@ -44,30 +27,19 @@ const About = () => {
               <div className="bg-black shadow rounded-lg p-6">
                 <div className="flex flex-col items-center">
                   <img
-                    src={aboutInfo.profileImage}
+                    src={profile}
                     className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
                     alt="profile"
                   />
-                  <h1 className="text-xl font-bold">{aboutInfo.bioInfo.name}</h1>
-                  <p className="text-gray-400">
-                    FullStack Developer
-                  </p>
+                  <h1 className="text-xl font-bold">
+                    {aboutInfo.bioInfo.name}
+                  </h1>
+                  <p className="text-gray-400">FullStack Developer</p>
                   <div className="mt-6 flex flex-wrap gap-4 justify-center">
-                    <a
-                      href={`mailto:${aboutInfo.bioInfo.contactInfo.email}`}
-                      target="_blank"
-                      className="bg-blue-500 shadow-lg shadow-blue-500/50 hover:bg-blue-600
-                                  hover:shadow-cyan-500/50 text-white py-2 px-4 rounded
-                                  dark:bg-blue-500 dark:shadow-lg dark:shadow-blue-500/50 dark:hover:bg-blue-600
-                                  dark:hover:shadow-cyan-500/50"
-                      rel="noreferrer"
-                    >
-                      Get in touch
-                    </a>
                     <a
                       href={aboutInfo.bioInfo.contactInfo.resume}
                       target="_blank"
-                      className="bg-green-500 shadow-lg shadow-green-500/50 hover:bg-green-600
+                      className="bg-green-700 shadow-lg shadow-green-500/50 hover:bg-green-500/80
                       hover:shadow-lime-500/50 text-white py-2 px-4 rounded
                       dark:bg-green-500 dark:shadow-lg dark:shadow-green-500/50 dark:hover:bg-green-600
                       dark:hover:shadow-lime-500/50"
@@ -75,6 +47,15 @@ const About = () => {
                     >
                       Resume
                     </a>
+                    <button
+                      className="contact_me bg-blue-800/80 shadow-lime-500/10"
+                      onClick={() => setIsModalOpen((prev) => !prev)}
+                      type="button"
+                      aria-label="Open modal"
+                      rel="noreferrer"
+                    >
+                      Get in touch
+                    </button>
                   </div>
                 </div>
                 <hr className="my-6 border-t border-gray-300" />
@@ -84,19 +65,31 @@ const About = () => {
                   </span>
                   <ul>
                     <li className="mb-2">
-                      <Link to="https://www.lenovo.com/fr/fr/p/laptops/thinkpad/thinkpadt/thinkpad-t460s/22tp2tt460s" target="_blank" className="text-gray-300">
+                      <Link
+                        to="https://www.lenovo.com/fr/fr/p/laptops/thinkpad/thinkpadt/thinkpad-t460s/22tp2tt460s"
+                        target="_blank"
+                        className="text-gray-300"
+                      >
                         <i className="bi bi-laptop" />
                         Lenovo ThinkPad T460s
                       </Link>
                     </li>
                     <li className="mb-2">
-                      <Link to="https://support.hp.com/ch-fr/document/c05268678" target="_blank" className="text-gray-300">
+                      <Link
+                        to="https://support.hp.com/ch-fr/document/c05268678"
+                        target="_blank"
+                        className="text-gray-300"
+                      >
                         <i className="bi bi-laptop" />
                         HP EliteBook 840 G-3
                       </Link>
                     </li>
                     <li className="mb-2">
-                      <Link to="https://www.lenovo.com/us/en/p/accessories-and-software/monitors/home/67aakcc3us" target="_blank" className="text-gray-300">
+                      <Link
+                        to="https://www.lenovo.com/us/en/p/accessories-and-software/monitors/home/67aakcc3us"
+                        target="_blank"
+                        className="text-gray-300"
+                      >
                         <i className="bi bi-display" />
                         Lenovo L24e-40
                       </Link>
@@ -107,18 +100,68 @@ const About = () => {
             </div>
             <div className="col-span-4 sm:col-span-9">
               <div className="bg-black shadow rounded-lg p-6">
-                <h2>About Me</h2>
+                <h2>
+                  <AnimatedLetters
+                    letters={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                    animation="pulse"
+                  />
+                </h2>
                 <div className="text-gray-300">
                   <p>{aboutInfo.bioInfo.intro}</p>
                   <p>{aboutInfo.bioInfo.studyInfo}</p>
-                  <p>{aboutInfo.bioInfo.experienceInfo}</p>
+                  <div>
+                    <h4>Full-Stack Expertise:</h4>
+                    <ul className="info-list">
+                      {aboutInfo.bioInfo.experienceInfo.map(
+                        (element) => (
+                          <li key={uuidv4()}>{element}</li>),
+                      ) }
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Beyond the Code:</h4>
+                    <ul className="info-list">
+                      {aboutInfo.bioInfo.beyondCode.map(
+                        (element) => (
+                          <li key={uuidv4()}>{element}</li>),
+                      ) }
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Driven by Curiosity:</h4>
+                    <ul className="info-no-list">
+                      {aboutInfo.bioInfo.divers.map(
+                        (element) => (
+                          <li key={uuidv4()}>{element}</li>),
+                      ) }
+                    </ul>
+                  </div>
+                  <br />
                   <p>{aboutInfo.bioInfo.contributionInfo}</p>
+                  <br />
                   <p>{aboutInfo.bioInfo.skillsInfo}</p>
                 </div>
                 <h3 className="font-semibold text-center mt-3 -mb-2">
                   Find me on
                 </h3>
                 <div className="flex justify-center items-center gap-6 my-6">
+                  <Link
+                    className="text-gray-400 hover:text-blue-600"
+                    aria-label="Visit GitHub"
+                    to={aboutInfo.bioInfo.contactInfo.github}
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      className="h-6"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M8 .297C3.589.297 0 3.886 0 8.297c0 3.653 2.363 6.746 5.637 7.853.412.076.56-.178.56-.396 0-.196-.007-.712-.01-1.397-2.291.498-2.784-1.153-2.784-1.153-.375-.952-.916-1.205-.916-1.205-.748-.51.057-.5.057-.5.828.058 1.264.855 1.264.855.735 1.26 1.927.898 3.016.688.094-.53.29-.891.528-1.096-1.853-.21-3.8-.926-3.8-4.117 0-.912.324-1.658.855-2.244-.085-.21-.372-1.063.082-2.213 0 0 .703-.225 2.3.86a7.75 7.75 0 0 1 2.057-.278c.696.002 1.397.094 2.057.278 1.593-1.084 2.297-.86 2.297-.86.455 1.15.168 2.004.082 2.213.531.586.853 1.332.853 2.244 0 3.198-1.953 3.906-3.81 4.113.3.258.567.766.567 1.546 0 1.117-.01 2.016-.01 2.291 0 .221.146.476.567.394C13.635 14.043 16 10.95 16 8.297 16 3.886 12.411.297 8 .297z"
+                      />
+                    </svg>
+                  </Link>
                   <Link
                     className="text-gray-400 hover:text-blue-600"
                     aria-label="Visit TrendyMinds LinkedIn"
@@ -191,18 +234,26 @@ const About = () => {
 
                 <h2 className="text-xl font-bold mt-6 mb-4">Hobbies</h2>
                 <div className="mb-6">
-                  <div className="flex justify-between flex-wrap gap-2 w-full">
-                    <span className="text-gray-400 font-bold">
-                      Writer
-                    </span>
-                  </div>
-                  <p className="mt-2 text-gray-300" />
+                  <ul className="flex justify-between flex-wrap gap-2 w-full">
+                    <li className="text-gray-400 font-bold">Content writer</li>
+                    <li className="text-gray-400 font-bold">Manga</li>
+                    <li className="text-gray-400 font-bold">
+                      Talking about superheroes
+                    </li>
+                    <li className="text-gray-400 font-bold">
+                      Watching horror movies
+                    </li>
+                  </ul>
+                  <p className="mt-2" />
                 </div>
               </div>
               <div />
             </div>
           </div>
         </div>
+      </div>
+      <div className={isModalOpen ? 'showWorkModal' : 'hidden'}>
+        <ContactMe closeModal={closeModal} />
       </div>
     </section>
   );
