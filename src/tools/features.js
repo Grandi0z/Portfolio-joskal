@@ -32,7 +32,7 @@ export class MyModal {
 
 export const aboutInfo = {
   profileImage:
-      'https://res.cloudinary.com/dhko6cdgf/image/upload/v1704546836/josephIo/Images/Profile/Picsart_22-11-28_13-42-04-893_j5u4hl.jpg',
+      '../../assets/images/profile/profiles.jpg',
   bioInfo: {
     name: 'Joseph Lwanzo Kausi',
     intro:
@@ -77,7 +77,7 @@ export const aboutInfo = {
       github: 'https://github.com/Grandi0z',
       email: 'josephlkausi@gmail.com',
       resume:
-          'https://docs.google.com/document/d/10NTVw12Jqzel3yX_4unJrOhg0_kLIhjWLl-Xi3sZf4Q/edit?usp=sharing',
+          'https://docs.google.com/document/d/16smnu6coUx7Vzaq5td0PDEX7_HdGV8WRWtkGSiH3EPo/edit?usp=sharing',
     },
   },
   location: 'Nord Kivu Goma',

@@ -8,6 +8,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { aboutInfo, modalState } from '../../tools/features';
 import ContactMe from './ContactMe';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
+import profile from '../../assets/images/profile/profiles.jpg';
 import './about.scss';
 
 const About = () => {
@@ -26,7 +27,7 @@ const About = () => {
               <div className="bg-black shadow rounded-lg p-6">
                 <div className="flex flex-col items-center">
                   <img
-                    src={aboutInfo.profileImage}
+                    src={profile}
                     className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
                     alt="profile"
                   />
