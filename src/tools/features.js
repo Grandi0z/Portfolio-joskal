@@ -1,22 +1,22 @@
-import tailwind from'../assets/images/tailwind.svg'
-import html from '../assets/images/html5-svgrepo-com.svg'
-import css from '../assets/images/css3-svgrepo-com (2).svg'
-import javascript from '../assets/images/javascript-1-svgrepo-com.svg'
-import sql from '../assets/images/database-svgrepo-com.svg'
-import ruby from '../assets/images/ruby-svgrepo-com (2).svg'
-import react from '../assets/images/react-svgrepo-com.svg'
-import redux from '../assets/images/redux-fill-svgrepo-com.svg'
-import rails from '../assets/images/rails-svgrepo-com.svg'
-import sass from '../assets/images/sass-svgrepo-com.svg'
-import bootstrap from '../assets/images/bootstrap-fill-svgrepo-com.svg'
-import php from '../assets/images/php-elephant-svgrepo-com.svg'
-import git from '../assets/images/git-icon-svgrepo-com.svg'
-import vscode from '../assets/images/vscode-insiders-svgrepo-com.svg'
-import mysql from '../assets/images/mysql-svgrepo-com (1).svg'
-import postgresql from '../assets/images/postgresql-svgrepo-com.svg'
-import jest from '../assets/images/jest-svgrepo-com.svg'
-import msoffice from '../assets/images/microsoftoffice-svgrepo-com.svg'
-import rspec from '../assets/images/rspec-svgrepo-com.svg'
+import tailwind from '../assets/images/tailwind.svg';
+import html from '../assets/images/html5-svgrepo-com.svg';
+import css from '../assets/images/css3-svgrepo-com (2).svg';
+import javascript from '../assets/images/javascript-1-svgrepo-com.svg';
+import sql from '../assets/images/database-svgrepo-com.svg';
+import ruby from '../assets/images/ruby-svgrepo-com (2).svg';
+import react from '../assets/images/react-svgrepo-com.svg';
+import redux from '../assets/images/redux-fill-svgrepo-com.svg';
+import rails from '../assets/images/rails-svgrepo-com.svg';
+import sass from '../assets/images/sass-svgrepo-com.svg';
+import bootstrap from '../assets/images/bootstrap-fill-svgrepo-com.svg';
+import php from '../assets/images/php-elephant-svgrepo-com.svg';
+import git from '../assets/images/git-icon-svgrepo-com.svg';
+import vscode from '../assets/images/vscode-insiders-svgrepo-com.svg';
+import mysql from '../assets/images/mysql-svgrepo-com (1).svg';
+import postgresql from '../assets/images/postgresql-svgrepo-com.svg';
+import jest from '../assets/images/jest-svgrepo-com.svg';
+import msoffice from '../assets/images/microsoftoffice-svgrepo-com.svg';
+import rspec from '../assets/images/rspec-svgrepo-com.svg';
 
 export class MyModal {
     static setIsModalOpen = false
@@ -46,15 +46,15 @@ export const aboutInfo = {
     experienceInfo: [
       `
       I specialize in crafting front-end (HTML/CSS, React, React-Native) and back-end (Ruby, PHP, Rails, SQL) experiences
-      `, 
+      `,
       `Fluent in testing practices (TDD - RSpec/Jest) and development tools (Git, GitHub, Webpack, Postman, VScode).
-      `, 
+      `,
       `
       Adept at Agile methodologies and remote collaboration, fostering teamwork and leadership within projects.`],
     beyondCode: [
-      `I bridge the gap between technical complexity and clear communication through effective technical writing.`,
-      `My passion for mentoring fuels my desire to guide and empower others in their learning journeys.`,
-      `I actively contributed to 20+ projects, showcasing my problem-solving skills and adaptability.`
+      'I bridge the gap between technical complexity and clear communication through effective technical writing.',
+      'My passion for mentoring fuels my desire to guide and empower others in their learning journeys.',
+      'I actively contributed to 20+ projects, showcasing my problem-solving skills and adaptability.',
     ],
     divers: [
       `When I'm not coding, you'll find me immersed in books, writing, or exploring the world of audiobooks.
@@ -63,7 +63,7 @@ export const aboutInfo = {
     contributionInfo:
         `Ready to leverage my skills and collaborative spirit? Reach out and let's 
         discuss how we can achieve success together.`,
-    skillsInfo: 
+    skillsInfo:
     `
     Connect with me on social media or email - I'm always happy to meet new people and share ideas!
     `,
@@ -109,87 +109,87 @@ export const technologies = {
     fontEnd: [
       {
         name: 'HTML',
-        photo:{svg: html, filter: 'filter-html', color:'#eb9d02' },
+        photo: { svg: html, filter: 'filter-html', color: '#eb9d02' },
       },
       {
         name: 'CSS',
-        photo: {svg: css, filter: 'filter-css', color:'#0241B8' },
+        photo: { svg: css, filter: 'filter-css', color: '#0241B8' },
       },
       {
         name: 'JavaScript',
-        photo: {svg: javascript, filter: 'filter-js', color:'#e0dd07' },
+        photo: { svg: javascript, filter: 'filter-js', color: '#e0dd07' },
       },
     ],
     backEnd: [
       {
         name: 'Sass',
-        photo: {svg: sass, filter: 'filter-sass', color: '#A32A91' },
+        photo: { svg: sass, filter: 'filter-sass', color: '#A32A91' },
       },
       {
         name: 'Bootstrap',
-        photo: {svg: bootstrap, filter: 'filter-bootstrap', color: '#690899' },
+        photo: { svg: bootstrap, filter: 'filter-bootstrap', color: '#690899' },
       },
       {
         name: 'TailwindCSS',
-        photo: {svg: tailwind, filter: 'filter-tailwind', color: '#29f2f2' },
+        photo: { svg: tailwind, filter: 'filter-tailwind', color: '#29f2f2' },
       },
       {
         name: 'Rials',
-        photo: {svg: rails, filter: 'filter-rails', color: '#FF0000' },
+        photo: { svg: rails, filter: 'filter-rails', color: '#FF0000' },
       },
       {
         name: 'Mysql',
-        photo: {svg: mysql, filter: 'filter-mysql', color: '#7d9df0' },
+        photo: { svg: mysql, filter: 'filter-mysql', color: '#7d9df0' },
       },
       {
         name: 'Postgresql',
-        photo: {svg: postgresql, filter: 'filter-react', color: '#4f589c' },
+        photo: { svg: postgresql, filter: 'filter-react', color: '#4f589c' },
       },
       {
         name: 'Ms-Office',
-        photo: {svg: msoffice, filter: 'filter-office', color: '#c74c1c' },
-        },
+        photo: { svg: msoffice, filter: 'filter-office', color: '#c74c1c' },
+      },
     ],
   },
   frameWorks: {
     fontEnd: [
       {
         name: 'Ruby',
-        photo: {svg: ruby, filter: 'filter-ruby', color:'#E02F07' },
+        photo: { svg: ruby, filter: 'filter-ruby', color: '#E02F07' },
       },
       {
         name: 'PHP',
-        photo: {svg: php, filter: 'filter-php', color: '#522e6b' },
+        photo: { svg: php, filter: 'filter-php', color: '#522e6b' },
       },
       {
         name: 'SQL',
-        photo: {svg: sql, filter: 'filter-sql', color: '#F0D362' },
+        photo: { svg: sql, filter: 'filter-sql', color: '#F0D362' },
       },
       {
         name: 'React',
-        photo: {svg: react, filter: 'filter-react', color: '#3e04bd' },
+        photo: { svg: react, filter: 'filter-react', color: '#3e04bd' },
       },
       {
         name: 'Redux',
-        photo: {svg: redux, filter: 'filter-redux', color: '#7E47DE' },
-      }
+        photo: { svg: redux, filter: 'filter-redux', color: '#7E47DE' },
+      },
     ],
     backEnd: [
       {
         name: 'Jest',
-        photo: {svg: jest, filter: 'filter-jest', color: '#570D18' },
+        photo: { svg: jest, filter: 'filter-jest', color: '#570D18' },
       },
       {
         name: 'Rspec',
-        photo: {svg: rspec , filter: 'filter-rspec', color: '#a30870' },
+        photo: { svg: rspec, filter: 'filter-rspec', color: '#a30870' },
       },
       {
         name: 'Git',
-        photo: {svg: git, filter: 'filter-git', color: '#FF0000' },
+        photo: { svg: git, filter: 'filter-git', color: '#FF0000' },
       },
       {
         name: 'VSCode',
-        photo: {svg: vscode, filter: 'filter-rails', color: '#e0dd07' },
+        photo: { svg: vscode, filter: 'filter-rails', color: '#e0dd07' },
       },
     ],
   },
@@ -337,4 +337,4 @@ export const projects = [
   },
 ];
 
-export let modalState = false;
+export const modalState = false;

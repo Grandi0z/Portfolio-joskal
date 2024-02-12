@@ -1,10 +1,11 @@
 import React, { useRef, useState } from 'react';
-import { XIcon } from '../../tools/features';
+import PropTypes from 'prop-types';
 import emailjs from '@emailjs/browser';
 import './contact_me.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Circles } from 'react-loader-spinner';
 import { faEnvelopeCircleCheck, faRectangleXmark } from '@fortawesome/free-solid-svg-icons';
+import { XIcon } from '../../tools/features';
 
 const ContactMe = ({ closeModal }) => {
   const [emailSent, setEmailSent] = useState(null);
@@ -14,11 +15,11 @@ const ContactMe = ({ closeModal }) => {
   const refForm = useRef();
 
   const handleCloseModal = () => {
-    closeModal()
-    setMessage('')
-    setError(null)
-    setEmailSent(null)
-  }
+    closeModal();
+    setMessage('');
+    setError(null);
+    setEmailSent(null);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,7 +30,7 @@ const ContactMe = ({ closeModal }) => {
         'service_cb3l138',
         'contact_form_njpci7g',
         refForm.current,
-        'iowCyNFAmwFKZDxcH'
+        'iowCyNFAmwFKZDxcH',
       )
       .then(
         () => {
@@ -44,7 +45,7 @@ const ContactMe = ({ closeModal }) => {
           setEmailSent(false);
           setIsLoading(false);
           setError(true);
-        }
+        },
       );
   };
 
@@ -58,7 +59,7 @@ const ContactMe = ({ closeModal }) => {
             <span className="sr-only">Close</span>
           </button>
         </div>
-        <div className="modal-body px-6 py-4">  
+        <div className="modal-body px-6 py-4">
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
               <ul className="space-y-4">
@@ -70,7 +71,7 @@ const ContactMe = ({ closeModal }) => {
                   <input type="text" name="subject" placeholder="Subject" required className="w-full bg-gray-100 border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-400" />
                 </li>
                 <li>
-                  <textarea name="message" placeholder="Message" required className="w-full bg-gray-100 border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-400" ></textarea>
+                  <textarea name="message" placeholder="Message" required className="w-full bg-gray-100 border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-400" />
                 </li>
                 <li className="flex justify-end item-center">
                   {emailSent ? (
@@ -96,6 +97,10 @@ const ContactMe = ({ closeModal }) => {
       </div>
     </div>
   );
+};
+
+ContactMe.propTypes = {
+  closeModal: PropTypes.func.isRequired,
 };
 
 export default ContactMe;

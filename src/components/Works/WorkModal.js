@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import UsedTechs from '../UsedTechs/UsedTechs';
-import { MyModal, XIcon } from '../../tools/features';
+import { XIcon } from '../../tools/features';
 
 const WorkModal = (props) => {
   const { project } = props;
-  const [isModalOpen, setIsModalOpen] = useState(MyModal.setIsModalOpen);
+  // const [isModalOpen, setIsModalOpen] = useState(MyModal.setIsModalOpen);
   return (
     <div className="flex items-center justify-center min-h-screen p-4 bg-gray-800 bg-opacity-50">
       <div className="w-full max-w-2xl bg-white rounded-lg shadow-md overflow-hidden mx-2 md:mx-0 dark:bg-gray-900">

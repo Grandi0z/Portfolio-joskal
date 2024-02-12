@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { v4 as uuidv4 } from 'uuid';
 import './animated_letters.scss'; // Import CSS file with animations
-
 
 const AnimatedLetters = ({ letters, animation }) => {
   const [animate, setAnimate] = useState(true);
@@ -11,9 +12,9 @@ const AnimatedLetters = ({ letters, animation }) => {
 
   return (
     <div className="animated-letters-container" onMouseEnter={handleHover}>
-      {letters.map((letter, index) => (
+      {letters.map((letter) => (
         <span
-          key={index}
+          key={uuidv4()}
           className={`animated-letter ${animate && animation}`}
           onAnimationEnd={() => setAnimate(false)}
         >
@@ -24,5 +25,9 @@ const AnimatedLetters = ({ letters, animation }) => {
   );
 };
 
-export default AnimatedLetters;
+AnimatedLetters.propTypes = {
+  letters: PropTypes.arrayOf(PropTypes.string).isRequired,
+  animation: PropTypes.string.isRequired,
+};
 
+export default AnimatedLetters;
